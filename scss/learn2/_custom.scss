@@ -140,6 +140,58 @@ b, strong {
         padding: 0 1rem;
     }
 
+    h5 {
+        margin: 2rem 0 0;
+        position: relative;
+        line-height: 2;
+
+        a {
+            display: block;
+            margin-left: 0;
+            margin-right: 0;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        i {
+            color: rgba($sidebar-link, 0.6);
+            position: absolute;
+            right: 0.6rem;
+            top: 0.7rem;
+            font-size: 80%;
+        }
+
+        &.parent {
+            a {
+                background: darken($sidebar-bg, 7%);
+                color: lighten($sidebar-link, 5%) !important;
+            }
+        }
+
+        &.active {
+            a {
+                background: $white;
+                color: $core-text !important;
+            }
+
+            i {
+                color: $core-text !important;
+            }
+        }
+
+
+    }
+
+    ul.topics {
+        display: none;
+    }
+
+    h5.parent, h5.active {
+        + ul.topics {
+            display: block;
+        }
+    }
+
 
 	ul {
         @extend .default-animation;
@@ -163,7 +215,7 @@ b, strong {
         }
 
         &.topics {
-            margin: 1rem;
+            margin: 0rem 1rem 2rem 1rem;
 
             &.searched {
                 ul {
