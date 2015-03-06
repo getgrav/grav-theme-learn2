@@ -22,9 +22,41 @@
     {% endfor %}
 {% endmacro %}
 
-<ul class="topics">
+{% macro version(p) %}
+    {% set parent_page = p.activeChild ? ' parent' : '' %}
+    {% set current_page = p.active ? ' active' : '' %}
+    <h3 class="{{ parent_page }}{{ current_page }}">
+        <a href="{{ p.url }}">{{ p.menu }}</a>
+    </h3>
+{% endmacro %}
+
+{% if theme_config.top_level_version %}
+    {% set version_docs = [] %}
+    <div id="version-picker">
+        <span>Version:</span>
+        <select id="version">
+            {% for p in pages.children %}
+                <option value="{{ p.slug }}">{{ p.menu }}</option>
+                {% if p.children.count > 0 %}
+                    {% set version_docs = version_docs|merge({(p.slug) : p}) %}
+                {% endif %}
+            {% endfor %}
+        </select>
+    </div>
+
+    {% for slug, docs in version_docs %}
+        {{ _self.version(docs) }}
+        <ul id="{{ slug }}" class="topics">
+        {{ _self.loop(docs, '') }}
+        </ul>
+    {% endfor %}
+
+{% else %}
+    <ul class="topics">
     {{ _self.loop(pages, '') }}
-</ul>
+    </ul>
+{% endif %}
+
 
 <hr />
 

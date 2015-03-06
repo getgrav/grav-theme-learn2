@@ -1,4 +1,5 @@
 enabled: true
+top_level_version: true
 github:
     enabled: true
     tree: https://github.com/getgrav/grav-learn/blob/develop/
