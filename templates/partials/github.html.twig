@@ -1,0 +1,8 @@
+{% set github_config = attribute(config.themes, config.system.pages.theme).github %}
+{% if github_config.enabled %}
+<blockquote id="github-contrib"><blockquote><blockquote><blockquote><blockquote>
+<p>
+    <i class="fa fa-2x fa-github"></i> Found errors? Think you can improve this documentation? <a href="{{ github_config.tree ~  ('/'~page.filePathClean)|replace({'/user/':''}) }}"><i class="fa fa-1x fa-edit"></i> edit this page</a>.
+</p>
+</blockquote></blockquote></blockquote></blockquote><blockquote>
+{% endif %}

@@ -1,0 +1,12 @@
+enabled: true
+github:
+    enabled: true
+    tree: https://github.com/getgrav/grav-learn/blob/develop/
+    commits: https://github.com/getgrav/grav-learn/commits/develop/
+
+streams:
+  schemes:
+    theme:
+      type: ReadOnlyStream
+      paths:
+        - user/themes/learn2
