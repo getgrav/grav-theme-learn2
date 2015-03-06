@@ -424,8 +424,9 @@ b, strong, label, th {
       color: #555 !important; }
     #sidebar h5.active i {
       color: #555 !important; }
-  #sidebar ul.topics {
-    display: none; }
+  #sidebar h5 + ul.topics {
+    display: none;
+    margin-top: 0; }
   #sidebar h5.parent + ul.topics, #sidebar h5.active + ul.topics {
     display: block; }
   #sidebar ul {
@@ -439,7 +440,7 @@ b, strong, label, th {
       #sidebar ul.searched .search-match a:hover {
         color: #eeeeee; }
     #sidebar ul.topics {
-      margin: 0rem 1rem 2rem 1rem; }
+      margin: 2rem 1rem 2rem 1rem; }
       #sidebar ul.topics.searched ul {
         display: block; }
       #sidebar ul.topics ul {

@@ -182,8 +182,9 @@ b, strong {
 
     }
 
-    ul.topics {
+    h5 + ul.topics {
         display: none;
+        margin-top: 0;
     }
 
     h5.parent, h5.active {
@@ -215,7 +216,7 @@ b, strong {
         }
 
         &.topics {
-            margin: 0rem 1rem 2rem 1rem;
+            margin: 2rem 1rem 2rem 1rem;
 
             &.searched {
                 ul {
