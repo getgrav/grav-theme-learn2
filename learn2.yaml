@@ -2,6 +2,7 @@ enabled: true
 top_level_version: false
 github:
     enabled: true
+    position: bottom
     tree: https://github.com/getgrav/grav-learn/blob/develop/
     commits: https://github.com/getgrav/grav-learn/commits/develop/
 

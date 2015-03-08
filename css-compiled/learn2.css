@@ -5,6 +5,15 @@
   padding: 0;
   list-style: none; }
 
+#top-github-link, #body #breadcrumbs {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
 .button, .button-secondary {
   display: inline-block;
   padding: 7px 12px; }
@@ -511,7 +520,7 @@ b, strong, label, th {
   #body .bordered {
     border: 1px solid #ccc; }
   #body .padding {
-    padding: 4rem 6rem; }
+    padding: 3rem 6rem; }
     @media only all and (max-width: 59.938em) {
       #body .padding {
         position: static;
@@ -645,6 +654,29 @@ b, strong, label, th {
   .lifecycle #body-inner .level-4 + ol h3 {
     background: #34495E; }
 
+#top-bar {
+  background: #F6F6F6;
+  border-radius: 2px;
+  margin: 0rem -1rem 2rem;
+  padding: 0 1rem;
+  height: 0;
+  min-height: 3rem; }
+
+#top-github-link {
+  position: relative;
+  z-index: 1;
+  float: right;
+  display: block; }
+
+#body #breadcrumbs {
+  height: auto;
+  display: block;
+  margin-bottom: 0;
+  padding-left: 0;
+  line-height: 1.4; }
+  #body #breadcrumbs span {
+    padding: 0 0.1rem; }
+
 @media only all and (max-width: 59.938em) {
   #sidebar {
     width: 230px; }
@@ -676,5 +708,9 @@ b, strong, label, th {
       z-index: 10;
       background: rgba(255, 255, 255, 0.5);
       cursor: pointer; } }
+.parent-element {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d; }
 
 /*# sourceMappingURL=learn2.css.map */

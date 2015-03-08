@@ -336,7 +336,7 @@ b, strong {
 
 	.padding {
 		@extend .default-animation;
-		padding: $body-margin ($body-margin + 2rem);
+		padding: 3rem ($body-margin + 2rem);
 
 		@include breakpoint(desktop-only) {
 			position: static;
@@ -569,6 +569,43 @@ $asbestos: #7F8C8D;
 	}
 }
 
+#top-bar {
+    background: $navbar-bg;
+    border-radius: 2px;
+    margin: 0rem -1rem 2rem;
+    padding: 0 1rem;
+    height: 0;
+    min-height: 3rem;
+}
+
+// Github link
+#top-github-link {
+
+    @extend %vertical-align;
+    position: relative;
+    z-index: 1;
+
+    float: right;
+    display: block;
+}
+
+// Breadcrumbs
+#body #breadcrumbs {
+
+    @extend %vertical-align;
+
+    height: auto;
+    display: block;
+    margin-bottom: 0;
+    padding-left: 0;
+
+    line-height: 1.4;
+
+    span {
+        padding: 0 0.1rem;
+    }
+}
+
 // Media Query stuff
 @include breakpoint(desktop-only) {
     #sidebar {
@@ -610,6 +647,13 @@ $asbestos: #7F8C8D;
             cursor: pointer;
         }
     }
+}
+
+// Utils
+.parent-element {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
 
 
