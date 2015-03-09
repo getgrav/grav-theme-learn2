@@ -1,5 +1,5 @@
 #header {
-    background: $core-accent;
+    background: $header-bg;
     color: $white;
     text-align: center;
 
@@ -11,8 +11,8 @@
 
     #logo-svg {
         @extend .default-animation;
-        width: 8rem;
-        height: 2rem;
+        width: $logo-width;
+        height: $logo-height;
 
         path {
             @extend .default-animation;
@@ -25,8 +25,8 @@
     margin-top: 0.5rem;
     position: relative;
 
-    border: 1px solid lighten($core-accent, 5%);
-    background: darken($core-accent,5%);
+    border: 1px solid lighten($header-bg, 5%);
+    background: darken($header-bg,5%);
     border-radius: 4px;
 
     label {
