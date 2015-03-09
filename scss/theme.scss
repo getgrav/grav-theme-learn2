@@ -7,43 +7,49 @@
 @import "configuration/nucleus/base";
 
 // Load Template Configuration
-@import "configuration/learn2/base";
+@import "configuration/theme/base";
 
 // Load Nucleus Mixins and Functions
 @import "nucleus/functions/base";
 @import "nucleus/mixins/base";
 
 // Load Template Library
-@import "learn2/modules/base";
+@import "theme/modules/base";
 
 //-------------------------------------------
 
 // TEMPLATE COMPONENTS
 
+// Configuration
+@import "theme/configuration";
+
 // Core
-@import "learn2/core";
-@import "learn2/fonts";
-
-// Nav
-@import "learn2/nav";
-
-// Main
-@import "learn2/main";
-
-// Typography
-@import "learn2/typography";
+@import "theme/core";
+@import "theme/fonts";
 
 // Forms
-@import "learn2/forms";
+@import "theme/forms";
+
+// Header
+@import "theme/header";
+
+// Nav
+@import "theme/nav";
+
+// Main
+@import "theme/main";
+
+// Typography
+@import "theme/typography";
 
 // Tables
-@import "learn2/tables";
+@import "theme/tables";
 
 // Buttons
-@import "learn2/buttons";
+@import "theme/buttons";
 
 // Bullets
-@import "learn2/bullets";
+@import "theme/bullets";
 
 // Custom
-@import "learn2/custom";
+@import "theme/custom";
