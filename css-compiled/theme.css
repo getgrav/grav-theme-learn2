@@ -236,9 +236,10 @@ textarea, input[type="email"], input[type="number"], input[type="password"], inp
     display: block;
     text-align: center; }
     #body img.border, #body .video-container.border {
-      border: 3px solid #f0f0f0; }
+      border: 2px solid #e6e6e6 !important;
+      padding: 2px; }
     #body img.shadow, #body .video-container.shadow {
-      box-shadow: 10px 10px 0 0 #f0f0f0; }
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); }
   #body .bordered {
     border: 1px solid #ccc; }
   #body .padding {
