@@ -29,9 +29,8 @@
     {% block javascripts %}
         {% do assets.addJs('jquery',101) %}
         {% do assets.addJs('theme://js/modernizr.custom.71422.js',100) %}
-        {% do assets.addJs('theme://js/learn.js') %}
         {% do assets.addJs('theme://js/featherlight.min.js') %}
-
+        {% do assets.addJs('theme://js/learn.js') %}
         {{ assets.js() }}
     {% endblock %}
 
@@ -87,11 +86,6 @@
         {% block navigation %}{% endblock %}
     </section>
     {% endblock %}
-    <script>
-    $(function () {
-        $('a[rel="lightbox"]').featherlight();
-    });
-    </script>
     {% block analytics %}{% include 'partials/analytics.html.twig' %}{% endblock %}
  </body>
 </html>

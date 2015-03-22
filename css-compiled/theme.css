@@ -534,6 +534,9 @@ td {
 #github-contrib i {
   vertical-align: middle; }
 
+.featherlight img {
+  margin: 0 !important; }
+
 .lifecycle #body-inner ul {
   list-style: none;
   margin: 0;

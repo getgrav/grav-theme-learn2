@@ -159,3 +159,9 @@ jQuery(window).on('load',function(){
   }
 
 });
+
+$(function () {
+    $('a[rel="lightbox"]').featherlight({
+        root: 'section#body'
+    });
+});
