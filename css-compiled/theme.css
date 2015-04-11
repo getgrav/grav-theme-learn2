@@ -115,7 +115,6 @@ textarea, input[type="email"], input[type="number"], input[type="password"], inp
   width: 300px;
   bottom: 0;
   left: 0;
-  z-index: 200;
   font-weight: 500;
   font-size: 15px;
   overflow-y: auto; }
