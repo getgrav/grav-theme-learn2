@@ -41,7 +41,7 @@
     {% block sidebar %}
     <nav id="sidebar">
         <div id="header">
-            <a id="logo" href="http://getgrav.org">{% include 'partials/logo.html.twig' %}</a>
+            <a id="logo" href="{{ theme_config.home_url }}">{% include 'partials/logo.html.twig' %}</a>
             <div class="searchbox">
                 <label for="search-by"><i class="fa fa-search"></i></label>
                 <input id="search-by" type="text" placeholder="Search Documentation" data-search-input="{{ base_url_relative }}/search.json/query" />
