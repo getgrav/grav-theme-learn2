@@ -1,6 +1,6 @@
 enabled: true
 top_level_version: false
-home_url: http://getgrav.org
+home_url:
 github:
     enabled: true
     position: bottom
