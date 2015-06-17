@@ -1,0 +1,15 @@
+enabled: true
+top_level_version: false
+home_url:
+github:
+    enabled: true
+    position: top
+    tree: https://github.com/getgrav/grav-skeleton-rtfm-site/blob/develop/
+    commits: https://github.com/getgrav/grav-skeleton-rtfm-site/commits/develop/
+
+streams:
+  schemes:
+    theme:
+      type: ReadOnlyStream
+      paths:
+        - user/themes/learn2
