@@ -3,9 +3,9 @@ top_level_version: false
 home_url:
 github:
     enabled: true
-    position: bottom
-    tree: https://github.com/getgrav/grav-learn/blob/develop/
-    commits: https://github.com/getgrav/grav-learn/commits/develop/
+    position: top
+    tree: https://github.com/getgrav/grav-skeleton-rtfm-site/blob/develop/
+    commits: https://github.com/getgrav/grav-skeleton-rtfm-site/commits/develop/
 
 streams:
   schemes:
