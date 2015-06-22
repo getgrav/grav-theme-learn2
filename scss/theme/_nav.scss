@@ -121,6 +121,10 @@
             ul {
                 display: none;
                 padding-bottom: 1rem;
+
+                ul {
+                    padding-bottom: 0;
+                }
             }
 
             li.parent ul, > li.active ul {
@@ -197,7 +201,8 @@
             }
 
             li {
-                text-indent: 1.2rem;
+                padding-left: 1rem;
+                text-indent: 0.2rem;
             }
         }
 
