@@ -172,6 +172,8 @@ textarea, input[type="email"], input[type="number"], input[type="password"], inp
       #sidebar ul.topics ul {
         display: none;
         padding-bottom: 1rem; }
+        #sidebar ul.topics ul ul {
+          padding-bottom: 0; }
       #sidebar ul.topics li.parent ul, #sidebar ul.topics > li.active ul {
         display: block; }
       #sidebar ul.topics > li > a {
@@ -220,7 +222,8 @@ textarea, input[type="email"], input[type="number"], input[type="password"], inp
         color: #1694CA;
         display: inline; }
       #sidebar ul li li {
-        text-indent: 1.2rem; }
+        padding-left: 1rem;
+        text-indent: 0.2rem; }
 
 #main {
   background: #f7f7f7;
