@@ -75,8 +75,8 @@ dfn {
 }
 
 mark {
-	background: #ff0;
-	color: #000;
+	background: #FFFF27;
+	color: #333;
 }
 
 sub,
@@ -120,7 +120,7 @@ code,
 kbd,
 pre,
 samp {
-	font-size: $core-font-size;
+	// font-size: $core-font-size;
 }
 
 button,
