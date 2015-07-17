@@ -101,12 +101,12 @@ jQuery(document).ready(function(){
       $('ul.topics').removeClass('searched');
       items.css('display', 'block');
       sessionStorage.removeItem('search-value');
-      $("#body-inner").unhighlight({ element: 'mark'})
+      $(".highlightable").unhighlight({ element: 'mark'})
       return;
     }
 
     sessionStorage.setItem('search-value',value);
-    $("#body-inner").unhighlight({ element: 'mark'}).highlight(value, { element: 'mark'});
+    $(".highlightable").unhighlight({ element: 'mark'}).highlight(value, { element: 'mark'});
 
     if (ajax && ajax.abort) ajax.abort();
     ajax = jQuery.ajax({
@@ -125,7 +125,7 @@ jQuery(document).ready(function(){
     jQuery('[data-search-clear]').on('click', function(){
       jQuery('[data-search-input]').val('').trigger('input');
       sessionStorage.removeItem('search-input');
-      $("#body-inner").unhighlight({ element: 'mark'})
+      $(".highlightable").unhighlight({ element: 'mark'})
     });
   });
 
@@ -163,7 +163,7 @@ jQuery(window).on('load',function(){
   }
 
 
-  $("#body-inner").highlight(sessionStorage.getItem('search-value'), { element: 'mark'});
+  $(".highlightable").highlight(sessionStorage.getItem('search-value'), { element: 'mark'});
 });
 
 $(function () {
