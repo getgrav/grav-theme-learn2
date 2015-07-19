@@ -128,7 +128,6 @@
     }
 
     h1 {
-        text-transform: capitalize;
         font-size: 5rem;
         border-bottom: 4px solid $rule-color;
     }
@@ -136,5 +135,15 @@
     p {
         text-align: center;
         font-size: 1.2rem;
+    }
+}
+
+#footer {
+    padding: 3rem 1rem;
+    color: darken($sidebar-link, 10%);
+    font-size: 13px;
+
+    p {
+        margin: 0;
     }
 }

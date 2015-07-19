@@ -312,12 +312,18 @@ textarea, input[type="email"], input[type="number"], input[type="password"], inp
     font-weight: 400;
     text-align: center; }
   #chapter h1 {
-    text-transform: capitalize;
     font-size: 5rem;
     border-bottom: 4px solid #F0F2F4; }
   #chapter p {
     text-align: center;
     font-size: 1.2rem; }
+
+#footer {
+  padding: 3rem 1rem;
+  color: #a2a2a2;
+  font-size: 13px; }
+  #footer p {
+    margin: 0; }
 
 body {
   font-family: "Muli", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
