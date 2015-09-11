@@ -1,3 +1,9 @@
+# v1.3.0
+## 09/11/2015
+
+1. [](#new)
+    * Added configurable Google analytics code
+
 # v1.2.0
 ## 08/25/2015
 
