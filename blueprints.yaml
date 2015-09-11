@@ -33,6 +33,13 @@ form:
         validate:
           type: text
 
+    google_analytics_code:
+        type: text
+        label: Google Analytics Code
+        placeholder: UA-XXXXXXXX-X
+        validate:
+          type: text
+
     github.position:
         type: select
         size: medium
