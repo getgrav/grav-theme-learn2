@@ -43,7 +43,11 @@
     {% endfor %}
 {% else %}
     <ul class="topics">
+        {% if theme_config.root_page %}
+            {{ _self.loop(page.find(theme_config.root_page), '') }}
+        {% else %}
     {{ _self.loop(pages, '') }}
+        {% endif %}
     </ul>
 {% endif %}
 
