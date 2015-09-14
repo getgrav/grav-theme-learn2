@@ -1,4 +1,7 @@
 enabled: true
+# root_page: '/documentation'						# optional: set root page of documentation		
+													# great in combination with themer plugin
+
 top_level_version: false                            # Use versions for top level navigation
 google_analytics_code:                              # Enter your `UA-XXXXXXXX-X` code here
 home_url:                                           # http://getgrav.org
