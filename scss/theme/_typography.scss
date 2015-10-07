@@ -133,6 +133,8 @@ samp {
 code {
 	background: $code-bg;
 	color: darken($code-text,10%);
+	padding: .2rem .4rem;
+  border-radius: 3px;
 }
 
 pre {
@@ -171,5 +173,3 @@ hr {
     a.anchor-link { color: #ccc; }
     a.anchor-link:hover { color: $core-accent; }
 }
-
-

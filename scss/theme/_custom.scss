@@ -188,17 +188,45 @@
     }
 }
 
+// clipboard
+.copy-to-clipboard {
+  background-image: url(../images/clippy.svg);
+  background-position: 50% 50%;
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  width: 27px;
+  height: $core-font-size + (.2rem * 2);
+	top: -1px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  color: darken($core-text,10%);
+  background-color: $code-bg;
+  margin-left: -.2rem;
+  cursor: pointer;
+  border-radius: 0 2px 2px 0;
+
+  &:hover {
+    background-color: darken($code-bg, 5%);
+  }
+
+  pre & {
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    background-color: #eee;
+    border-color: #ddd;
+    border-radius: 2px;
+
+    &:hover {
+      background-color: #d9d9d9;
+    }
+  }
+}
+
 // Utils
 .parent-element {
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
-
-
-
-
-
-
-
-

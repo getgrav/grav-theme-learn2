@@ -31,6 +31,7 @@
         {% do assets.addJs('jquery',101) %}
         {% do assets.addJs('theme://js/modernizr.custom.71422.js',100) %}
         {% do assets.addJs('theme://js/featherlight.min.js') %}
+        {% do assets.addJs('theme://js/clipboard.min.js') %}
         {% do assets.addJs('theme://js/learn.js') %}
         {{ assets.js() }}
     {% endblock %}
@@ -44,7 +45,8 @@
             <a id="logo" href="{{ theme_config.home_url ?: base_url_absolute }}">{% include 'partials/logo.html.twig' %}</a>
             <div class="searchbox">
                 <label for="search-by"><i class="fa fa-search"></i></label>
-                <input id="search-by" type="text" placeholder="Search Documentation" data-search-input="{{ base_url_relative }}/search.json/query" />
+                <input id="search-by" type="text" placeholder="{{ 'THEME_LEARN2_SEARCH_DOCUMENTATION'|t }}"
+                       data-search-input="{{ base_url_relative }}/search.json/query"/>
                 <span data-search-clear><i class="fa fa-close"></i></span>
             </div>
         </div>
@@ -61,7 +63,7 @@
         <div class="padding highlightable">
             <a href="#" id="sidebar-toggle" data-sidebar-toggle><i class="fa fa-2x fa-bars"></i></a>
 
-            {% if theme_config.github.position == 'top' or config.plugins.breadcrumbs.enabled %}
+            {% block topbar %}{% if theme_config.github.position == 'top' or config.plugins.breadcrumbs.enabled %}
             <div id="top-bar">
                 {% if theme_config.github.position == 'top' %}
                 <div id="top-github-link">
@@ -73,7 +75,7 @@
                 {% include 'partials/breadcrumbs.html.twig' %}
                 {% endif %}
             </div>
-            {% endif %}
+            {% endif %}{% endblock %}
 
             {% block content %}{% endblock %}
 
