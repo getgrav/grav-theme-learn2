@@ -1,3 +1,16 @@
+# v1.4.0
+## 10/07/2015
+
+1. [](#new)
+    * Added 1-click copy-to-clipboard feature for `code` and `pre` tags
+    * Added German translations
+    * Configurable root page
+1. [](#improved)
+    * Wrapped topbar to remove it from error pages
+1. [](#bugfix)
+    * Fix for bad YAML
+    * Fix for bad HTML in github note
+
 # v1.3.0
 ## 09/11/2015
 
