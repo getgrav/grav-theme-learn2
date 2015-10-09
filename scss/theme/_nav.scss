@@ -17,7 +17,6 @@
     left: 0;
     font-weight: $font-weight-medium;
     font-size: 15px;
-    overflow-y: auto;
 
     a {
         color: $sidebar-link;
@@ -110,7 +109,7 @@
         }
 
         &.topics {
-            margin: 2rem 1rem 2rem 1rem;
+            margin: 0 1rem;
 
             &.searched {
                 ul {
