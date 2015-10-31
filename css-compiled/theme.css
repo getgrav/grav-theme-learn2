@@ -124,6 +124,8 @@ textarea, input[type="email"], input[type="number"], input[type="password"], inp
     color: #bbbbbb; }
     #sidebar a:hover {
       color: #d5d5d5; }
+    #sidebar a.subtitle {
+      color: rgba(187, 187, 187, 0.6); }
   #sidebar hr {
     border-bottom: 1px solid #323a44; }
   #sidebar a.padding {

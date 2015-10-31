@@ -23,6 +23,9 @@
         &:hover {
             color: lighten($sidebar-link, 10%);
         }
+        &.subtitle {
+            color: rgba($sidebar-link, 0.6);
+        }
     }
 
     hr {
