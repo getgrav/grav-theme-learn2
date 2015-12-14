@@ -10,3 +10,9 @@ de:
     THEME_LEARN2_CLEAR_HISTORY: Verlauf löschen
     THEME_LEARN2_BUILT_WITH_GRAV: Seite erstellt mit <a href="http://getgrav.org">Grav</a> - The Modern Flat File CMS
     THEME_LEARN2_SEARCH_DOCUMENTATION: Dokumentation durchsuchen
+it:
+    THEME_LEARN2_GITHUB_EDIT_THIS_PAGE: modifica pagina
+    THEME_LEARN2_GITHUB_NOTE: Hai trovato degli errori? Pensi di poter migliorare questa documentazione?
+    THEME_LEARN2_CLEAR_HISTORY: Cancella Cronologia
+    THEME_LEARN2_BUILT_WITH_GRAV: Built with <a href="http://getgrav.org">Grav</a> - The Modern Flat File CMS
+    THEME_LEARN2_SEARCH_DOCUMENTATION: Cerca nella Documentatione
