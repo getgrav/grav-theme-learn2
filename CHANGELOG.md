@@ -1,3 +1,14 @@
+# v1.5.0
+## 01/06/2016
+
+1. [](#new)
+    * Added keyboard prev/next navigation
+1. [](#improved)
+    * Various language updates
+1. [](#bugfix)
+    * Fixed a typo in CSS
+
+
 # v1.4.2
 ## 12/18/2015
 
