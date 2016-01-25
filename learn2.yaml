@@ -7,10 +7,3 @@ github:
     position: top                                   # top | bottom | off
     tree: https://github.com/getgrav/grav-skeleton-rtfm-site/blob/develop/
     commits: https://github.com/getgrav/grav-skeleton-rtfm-site/commits/develop/
-
-streams:
-  schemes:
-    theme:
-      type: ReadOnlyStream
-      paths:
-        - user/themes/learn2
