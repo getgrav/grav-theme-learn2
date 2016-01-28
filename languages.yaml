@@ -4,6 +4,12 @@ en:
     THEME_LEARN2_CLEAR_HISTORY: Clear History
     THEME_LEARN2_BUILT_WITH_GRAV: Built with <a href="http://getgrav.org">Grav</a> - The Modern Flat File CMS
     THEME_LEARN2_SEARCH_DOCUMENTATION: Search Documentation
+es:
+    THEME_LEARN2_GITHUB_EDIT_THIS_PAGE: editar esta página
+    THEME_LEARN2_GITHUB_NOTE: ¿Encontraste errores? ¿Crees que puedes mejorar esta documentación?
+    THEME_LEARN2_CLEAR_HISTORY: Limpiar historial
+    THEME_LEARN2_BUILT_WITH_GRAV: Hecho con <a href="http://getgrav.org">Grav</a> - El CMS moderno de archivos planos
+    THEME_LEARN2_SEARCH_DOCUMENTATION: Buscar en la documentación
 de:
     THEME_LEARN2_GITHUB_EDIT_THIS_PAGE: diese Seite bearbeiten
     THEME_LEARN2_GITHUB_NOTE: Fehler gefunden? Möchten Sie diese Seite verbessern?
