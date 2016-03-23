@@ -230,3 +230,14 @@
   -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
+
+// SnappyGrav Plugin link
+#top-snappygrav-link {
+
+  @extend %vertical-align;
+  position: relative;
+  z-index: 1;
+
+  float: right;
+  display: block;
+}
