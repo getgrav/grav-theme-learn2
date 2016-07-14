@@ -1,3 +1,14 @@
+# v1.6.0
+## 07/14/2016
+
+1. [](#new)
+    * Added the spanish language
+1. [](#improved)
+    * Remove unneeded streams from Theme YAML
+    * Set the page language from Grav's Language configuration. Default to english.
+1. [](#bugfix)
+    * Fix an issue on iOS 9+ Safari scaling
+    
 # v1.5.0
 ## 01/06/2016
 
@@ -7,7 +18,6 @@
     * Various language updates
 1. [](#bugfix)
     * Fixed a typo in CSS
-
 
 # v1.4.2
 ## 12/18/2015
