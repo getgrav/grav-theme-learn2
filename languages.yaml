@@ -30,3 +30,10 @@ it:
     THEME_LEARN2_CLEAR_HISTORY: Cancella Cronologia
     THEME_LEARN2_BUILT_WITH_GRAV: Built with <a href="http://getgrav.org">Grav</a> - The Modern Flat File CMS
     THEME_LEARN2_SEARCH_DOCUMENTATION: Cerca nella Documentatione
+
+cs:
+    THEME_LEARN2_GITHUB_EDIT_THIS_PAGE: Upravte tuto stránku
+    THEME_LEARN2_GITHUB_NOTE: Našli jste chybu? Myslíte, že můžete vylepšit tuto dokumentaci?
+    THEME_LEARN2_CLEAR_HISTORY: Smazat historii
+    THEME_LEARN2_BUILT_WITH_GRAV: Postaveno na <a href="http://getgrav.org">Grav</a> - Moderní správce obsahu pomocí souborů prostých textů
+    THEME_LEARN2_SEARCH_DOCUMENTATION: Vyhledat v dokumentaci
