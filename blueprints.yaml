@@ -57,10 +57,5 @@ form:
 
     github.commits:
         type: text
-        label: GitHub Tree
-        default: https://github.com/getgrav/grav-skeleton-rtfm-site/commits/develop/
-
-    github.commits:
-        type: text
-        label: GitHub Tree
+        label: GitHub Commits
         default: https://github.com/getgrav/grav-skeleton-rtfm-site/commits/develop/
