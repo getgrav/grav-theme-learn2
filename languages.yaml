@@ -37,7 +37,7 @@ cs:
     THEME_LEARN2_CLEAR_HISTORY: Smazat historii
     THEME_LEARN2_BUILT_WITH_GRAV: Postaveno na <a href="http://getgrav.org">Grav</a> - Moderní správce obsahu pomocí souborů prostých textů
     THEME_LEARN2_SEARCH_DOCUMENTATION: Vyhledat v dokumentaci
-cn:
+zh-CN:
     THEME_LEARN2_GITHUB_EDIT_THIS_PAGE: 编辑此页
     THEME_LEARN2_GITHUB_NOTE: 发现错误？请帮忙改进，谢谢！
     THEME_LEARN2_CLEAR_HISTORY: 清除历史
