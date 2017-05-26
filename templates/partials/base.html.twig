@@ -66,6 +66,12 @@
 
             {% block topbar %}{% if theme_config.github.position == 'top' or config.plugins.breadcrumbs.enabled %}
             <div id="top-bar">
+                {% if config.plugins.snappygrav.enabled %}
+                <div id="top-snappygrav-link">
+                    <a href="{{ page.url }}:pdf" title="{{ 'THEME_LEARN2_DOWNLOAD_PDF'|t }}"><i class="fa fa-file-pdf-o"></i></a>
+                </div>
+                {% endif %}
+                
                 {% if theme_config.github.position == 'top' %}
                 <div id="top-github-link">
                 {% include 'partials/github_link.html.twig' %}
