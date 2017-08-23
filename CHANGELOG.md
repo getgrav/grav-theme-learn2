@@ -1,5 +1,5 @@
 # v1.7.0
-## 05/xx/2017
+## 08/23/2017
 
 1. [](#improved)
     * Added default page template.
