@@ -91,5 +91,8 @@
         {% include 'partials/analytics.html.twig' %}
         {% endif %}
     {% endblock %}
+    {% block bottom %}
+        {{ assets.js('bottom') }}
+    {% endblock %}
  </body>
 </html>
