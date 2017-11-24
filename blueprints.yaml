@@ -25,6 +25,17 @@ form:
           0: Disabled
         validate:
           type: bool
+          
+    grav.signature:
+        type: toggle
+        label: Grav signature in sidebar
+        highlight: 1
+        default: 0
+        options:
+          1: Enabled
+          0: Disabled
+        validate:
+          type: bool          
 
     home_url:
         type: text
