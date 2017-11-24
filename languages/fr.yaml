@@ -1,0 +1,24 @@
+THEME_LEARN2:
+  _YES: oui
+  _NO: non
+  _ENABLED: activé
+  _DISABLED: désactivé
+  _TAB_GLOBAL: Général
+  _TAB_VIEW: Affichage
+  _TAB_GITHUB: GitHub
+  _TOP: Haut
+  _BOTTOM: Bas
+  _ON: Actif
+  _OFF: Inactif
+  _HOME_URL: URL du site
+  _GOOGLE_ANALYTICS: Code API Google Analytics
+  _TOPLEVEL_VERSION: Version en haut du menu
+  _GRAV_SIGN: Signature GRAV dans le menu
+  _GITHUB_POSITION: Position du lien GitHub
+  _GITHUB_TREE: URL de la branche
+  _GITHUB_COMMITS: URL des commits
+  GITHUB_EDIT_THIS_PAGE: modifier cette page
+  GITHUB_NOTE: Vous avez découvert des erreurs ? Vous pensez pouvoir améliorer cette documentation ?
+  CLEAR_HISTORY: Effacer l'historique
+  BUILT_WITH_GRAV: Créé avec <a href="http://getgrav.org">Grav</a> - Le CMS moderne sans base de données
+  SEARCH_DOCUMENTATION: Rechercher dans la documentation
