@@ -1,0 +1,24 @@
+THEME_LEARN2:
+  _YES: yes
+  _NO: no
+  _ENABLED: enabled
+  _DISABLED: disabled
+  _TAB_GLOBAL: Global
+  _TAB_VIEW: View
+  _TAB_GITHUB: GitHub
+  _TOP: Top
+  _BOTTOM: Bottom
+  _ON: On
+  _OFF: Off
+  _HOME_URL: Home URL
+  _GOOGLE_ANALYTICS: Google Analytics Code API
+  _TOPLEVEL_VERSION: Top Level Version
+  _GRAV_SIGN: GRAV sign in sidebar
+  _GITHUB_POSITION: GitHub position
+  _GITHUB_TREE: GitHub tree URL
+  _GITHUB_COMMITS: GitHub commits URL
+  GITHUB_EDIT_THIS_PAGE: edit this page
+  GITHUB_NOTE: Found errors? Think you can improve this documentation?
+  CLEAR_HISTORY: Clear History
+  BUILT_WITH_GRAV: Built with <a href="http://getgrav.org">Grav</a> - The Modern Flat File CMS
+  SEARCH_DOCUMENTATION: Search Documentation
