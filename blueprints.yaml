@@ -15,47 +15,70 @@ license: MIT
 form:
   validation: loose
   fields:
-    top_level_version:
-        type: toggle
-        label: Top Level Version
-        highlight: 1
-        default: 0
-        options:
-          1: Enabled
-          0: Disabled
-        validate:
-          type: bool
 
-    home_url:
-        type: text
-        label: Home URL
-        placeholder: http://getgrav.org
-        validate:
-          type: text
-
-    google_analytics_code:
-        type: text
-        label: Google Analytics Code
-        placeholder: UA-XXXXXXXX-X
-        validate:
-          type: text
-
-    github.position:
-        type: select
-        size: medium
-        classes: fancy
-        label: GitHub Position
-        options:
-            top: Top
-            bottom: Bottom
-            off: Off
-
-    github.tree:
-        type: text
-        label: GitHub Tree
-        default: https://github.com/getgrav/grav-skeleton-rtfm-site/blob/develop/
-
-    github.commits:
-        type: text
-        label: GitHub Commits
-        default: https://github.com/getgrav/grav-skeleton-rtfm-site/commits/develop/
+    tabs:
+      type: tabs
+      active: 1
+      class: subtle
+      fields:
+        tab_configuration:
+          type: tab
+          title: THEME_LEARN2._TAB_GLOBAL
+          fields:
+            home_url:
+                type: text
+                label: THEME_LEARN2._HOME_URL
+                placeholder: http://getgrav.org
+                validate:
+                  type: text
+            google_analytics_code:
+                type: text
+                label: THEME_LEARN2._GOOGLE_ANALYTICS
+                placeholder: UA-XXXXXXXX-X
+                validate:
+                  type: text
+        tab_view:
+          type: tab
+          title: THEME_LEARN2._TAB_VIEW
+          fields:
+            top_level_version:
+                type: toggle
+                label: THEME_LEARN2._TOPLEVEL_VERSION
+                highlight: 1
+                default: 0
+                options:
+                  1: THEME_LEARN2._ENABLED
+                  0: THEME_LEARN2._DISABLED
+                validate:
+                  type: bool
+            grav.signature:
+                type: toggle
+                label: THEME_LEARN2._GRAV_SIGN
+                highlight: 1
+                default: 0
+                options:
+                  1: THEME_LEARN2._ENABLED
+                  0: THEME_LEARN2._DISABLED
+                validate:
+                  type: bool
+        tab_github:
+          type: tab
+          title: THEME_LEARN2._TAB_GITHUB
+          fields:
+            github.position:
+                type: select
+                size: medium
+                classes: fancy
+                label: THEME_LEARN2._GITHUB_POSITION
+                options:
+                    top: THEME_LEARN2._TOP
+                    bottom: THEME_LEARN2._BOTTOM
+                    off: THEME_LEARN2._OFF
+            github.tree:
+                type: text
+                label: THEME_LEARN2._GITHUB_TREE
+                default: https://github.com/getgrav/grav-skeleton-rtfm-site/blob/develop/
+            github.commits:
+                type: text
+                label: THEME_LEARN2._GITHUB_COMMITS
+                default: https://github.com/getgrav/grav-skeleton-rtfm-site/commits/develop/
