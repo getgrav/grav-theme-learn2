@@ -1,5 +1,5 @@
 name: Learn2
-version: 1.7.0
+version: 1.8.0
 description: "Learn2 is a new modern documentation theme for Grav"
 icon: book
 author:
@@ -11,6 +11,9 @@ demo: http://learn.getgrav.org
 keywords: heme, docs, modern, fast, responsive, html5, css3
 bugs: https://github.com/getgrav/grav-theme-learn2/issues
 license: MIT
+
+dependencies:
+  - { name: grav, version: '>=1.5.10' }
 
 form:
   validation: loose
