@@ -1,4 +1,6 @@
 {% macro loop(page, parent_loop) %}
+    {% import _self as self %}
+
     {% if parent_loop|length > 0 %}
         {% set data_level = parent_loop %}
     {% else %}
@@ -14,7 +16,7 @@
             </a>
             {% if p.children.count > 0 %}
             <ul>
-                {{ _self.loop(p, parent_loop|default(0)+loop.index) }}
+                {{ self.loop(p, parent_loop|default(0)+loop.index) }}
             </ul>
             {% endif %}
         </li>
@@ -34,21 +36,23 @@
     </h5>
 {% endmacro %}
 
+{% import _self as macro %}
+
 <div class="scrollbar-inner">
     <div class="highlightable">
         {% if theme_config.top_level_version %}
             {% for slug, ver in pages.children %}
-                {{ _self.version(ver) }}
+                {{ macro.version(ver) }}
                 <ul id="{{ slug }}" class="topics">
-                {{ _self.loop(ver, '') }}
+                {{ macro.loop(ver, '') }}
                 </ul>
             {% endfor %}
         {% else %}
             <ul class="topics">
                 {% if theme_config.root_page %}
-                    {{ _self.loop(page.find(theme_config.root_page), '') }}
+                    {{ macro.loop(page.find(theme_config.root_page), '') }}
                 {% else %}
-            {{ _self.loop(pages, '') }}
+            {{ macro.loop(pages, '') }}
                 {% endif %}
             </ul>
         {% endif %}

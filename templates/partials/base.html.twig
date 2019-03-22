@@ -1,9 +1,9 @@
 {% set theme_config = attribute(config.themes, config.system.pages.theme) %}
 {% set github_link_position = github_link_position is defined ? github_link_position : theme_config.github.position %}
 <!DOCTYPE html>
-<html lang="{{ grav.language.getLanguage ?: 'en' }}">
+<html lang="{{ grav.language.getActive ?: grav.config.site.default_lang }}">
 <head>
-    {% block head %}
+{% block head %}
     <meta charset="utf-8" />
     <title>{% if header.title %}{{ header.title }} | {% endif %}{{ site.title }}</title>
     {% include 'partials/metadata.html.twig' %}
@@ -24,8 +24,6 @@
             {% do assets.addCss('theme://css/pure-0.5.0/grids-min.css') %}
             {% do assets.addJs('theme://js/html5shiv-printshiv.min.js') %}
         {% endif %}
-
-        {{ assets.css() }}
     {% endblock %}
 
     {% block javascripts %}
@@ -35,10 +33,14 @@
         {% do assets.addJs('theme://js/clipboard.min.js') %}
         {% do assets.addJs('theme://js/jquery.scrollbar.min.js') %}
         {% do assets.addJs('theme://js/learn.js') %}
-        {{ assets.js() }}
     {% endblock %}
 
-    {% endblock %}
+    {% block assets deferred %}
+    {{ assets.css()|raw }}
+    {{ assets.js()|raw }}
+  {% endblock %}
+
+{% endblock head %}
 </head>
 <body class="searchbox-hidden {{ page.header.body_classes }}" data-url="{{ page.route }}">
     {% block sidebar %}
@@ -86,10 +88,15 @@
         {% block navigation %}{% endblock %}
     </section>
     {% endblock %}
+
     {% block analytics %}
         {% if theme_config.google_analytics_code %}
         {% include 'partials/analytics.html.twig' %}
         {% endif %}
+    {% endblock %}
+
+    {% block bottom %}
+        {{ assets.js('bottom')|raw }}
     {% endblock %}
  </body>
 </html>

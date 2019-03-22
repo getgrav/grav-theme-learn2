@@ -1,3 +1,10 @@
+# v1.8.0
+## 03/21/2019
+
+1. [](#new)
+    * Set Dependency of Grav 1.5.10+ which has support for new **Deferred Block** Twig extension
+    * Implement assets rendering using **Deferred Block** Twig extension
+
 # v1.7.0
 ## 08/23/2017
 
