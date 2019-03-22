@@ -1,5 +1,5 @@
 # v1.8.0
-## mm/dd/2019
+## 03/21/2019
 
 1. [](#new)
     * Set Dependency of Grav 1.5.10+ which has support for new **Deferred Block** Twig extension
