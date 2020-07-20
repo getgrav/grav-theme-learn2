@@ -1,6 +1,4 @@
 {% macro loop(page, parent_loop) %}
-    {% import _self as self %}
-
     {% if parent_loop|length > 0 %}
         {% set data_level = parent_loop %}
     {% else %}
@@ -12,11 +10,11 @@
         <li class="dd-item{{ parent_page }}{{ current_page }}" data-nav-id="{{ p.route }}">
             <a href="{{ p.url }}" {% if p.header.class %}class="{{ p.header.class }}"{% endif %}>
                 <i class="fa fa-check read-icon"></i>
-                <span><b>{% if data_level == 0 %}{{ loop.index }}. {% endif %}</b>{{ p.menu }}</span>
+                <span><b>{% if data_level == 0 %} {% endif %}</b>{{ p.menu }}</span>
             </a>
             {% if p.children.count > 0 %}
             <ul>
-                {{ self.loop(p, parent_loop|default(0)+loop.index) }}
+                {{ _self.loop(p, parent_loop|default(0)+loop.index) }}
             </ul>
             {% endif %}
         </li>
@@ -36,23 +34,21 @@
     </h5>
 {% endmacro %}
 
-{% import _self as macro %}
-
 <div class="scrollbar-inner">
     <div class="highlightable">
         {% if theme_config.top_level_version %}
             {% for slug, ver in pages.children %}
-                {{ macro.version(ver) }}
+                {{ _self.version(ver) }}
                 <ul id="{{ slug }}" class="topics">
-                {{ macro.loop(ver, '') }}
+                {{ _self.loop(ver, '') }}
                 </ul>
             {% endfor %}
         {% else %}
             <ul class="topics">
                 {% if theme_config.root_page %}
-                    {{ macro.loop(page.find(theme_config.root_page), '') }}
+                    {{ _self.loop(page.find(theme_config.root_page), '') }}
                 {% else %}
-            {{ macro.loop(pages, '') }}
+            {{ _self.loop(pages, '') }}
                 {% endif %}
             </ul>
         {% endif %}
@@ -62,6 +58,10 @@
                     class="fa fa-fw fa-history"></i> {{ 'THEME_LEARN2_CLEAR_HISTORY'|t }}</a><br/>
 
         <section id="footer">
+            {% if config.plugins.feed.enabled and pages.find('/feed') %}
+              <a class="button" href="{{ base_url }}/feed.atom"><i class="fa fa-rss-square"></i> Atom 1.0</a>
+              <a class="button" href="{{ base_url }}/feed.rss"><i class="fa fa-rss-square"></i> RSS</a><br><br>
+            {% endif %}
             <p>{{ 'THEME_LEARN2_BUILT_WITH_GRAV'|t|raw }}</p>
         </section>
     </div>
