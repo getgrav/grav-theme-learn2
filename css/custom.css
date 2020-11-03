@@ -1,7 +1,7 @@
 /* Julie's CSS Test */
 
 body {
-		font: 15px 'raleway', 'HelveticaNeue', 'Helvetica Neue', 'Helvetica-Neue', Helvetica, Arial, sans-serif;
+		font: 16px 'raleway', 'HelveticaNeue', 'Helvetica Neue', 'Helvetica-Neue', Helvetica, Arial, sans-serif;
 		color: #444;
 		-webkit-text-size-adjust: 100%;
 }
@@ -27,8 +27,21 @@ hr.hrfade {
   border: 0;
 }
 
+.image45 {
+	width: 45%;
+	max-width: 600px;
+	max-height: 600px;
+	height: auto;
+	border-style: outset;
+	border-color: #222222;
+	border-width: 2px;
+	margin: -15px 0;
+}
+
 .image70 {
-	max-width: 70%;
+	width: 70%;
+	max-width: 1200px;
+	max-height: 1200px;
 	height: auto;
 	border-style: outset;
 	border-color: #222222;
@@ -37,7 +50,9 @@ hr.hrfade {
 }
 
 .image90 {
-	max-width: 90%;
+	width: 90%;
+	max-width: 1600px;
+	max-height: 1600px;
 	height: auto;
 	border-style: outset;
 	border-color: #222222;
@@ -45,21 +60,9 @@ hr.hrfade {
 }
 
 .image100 {
-	max-width: 100%;
-	height: auto;
-	border-style: outset;
-	border-color: #222222;
-	border-width: 2px;
-}
-
-div.sidebyside {
-	margin: 5px;
-	float: center;
-	width: 300px;
-}
-
-div.sidebyside img {
 	width: 100%;
+	max-width: 1800px;
+	max-height: 1800px;
 	height: auto;
 	border-style: outset;
 	border-color: #222222;
@@ -69,22 +72,56 @@ div.sidebyside img {
 div.desc {
   	padding: 15px;
   	text-align: center;
+} 
+
+/*to allow images to display next to each other*/
+div.compare {
+	display: flex;
+	flex-wrap: wrap;
+	flex-basis: row;
+	align-items: center;
+	justify-content: space-around;
 }
 
-body div.mobile{
+/*for each image when you want just two images side by side*/
+div.compareimage {
+	width: 45%;
+	margin-right: 15px;
+	margin-left: 15px;
+}
+
+/*class for all screen shots from mobile phones (not tablets)*/
+img.mobile {
+	width: 290px;
+	margin: -15px 15px 0px 15px;
+	height: auto;
+	border-style: outset;
+	border-color: #222222;
+	border-width: 2px;
+}
+
+/*to create mobile callout section*/
+div.mobile{
 	background-color: #cc5d31;
 	color: #ffffff;
-	padding: 15px;
-	margin-right: 15px;
-	margin-left: 15 px;
+	margin-right: 10px;
+	margin-left: 10px;
+	padding: 10px;
 }
 
-div.mobileimg {
+ /*for image at head of each mobile callout section
+ add div around image with this class*/
+div.mobilecalloutimg {
 	float: left;
 	margin-left: -15px;
 	margin-top: -63px;
 	padding-right: 20px;
 	width: 100px;
+}
+
+div.video {
+	text-align: center;
+	margin: auto;
 }
 
 
