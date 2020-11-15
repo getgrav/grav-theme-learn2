@@ -18,6 +18,10 @@ body h2 {
 
 body h3 {font-size: 1.5rem;}
 
+body a {color: #269e80;}
+
+body a:hover {color:#6fc4b0;}
+
 hr.hrfade {
   height: 1px;
   background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.8), rgba(0,0,0,0));
@@ -119,9 +123,40 @@ div.mobilecalloutimg {
 	width: 100px;
 }
 
+/*to center video sections and iframes*/
 div.video {
 	text-align: center;
 	margin: auto;
 }
 
+div.inthislesson {
+	background-color: #8a8a8a;
+	color: #ffffff;
+	margin: 1rem;
+	padding: .5rem;
+}
+
+div.inthislesson a {
+	color: #6fc4b0;
+}
+div.inthislesson a:hover {
+	color: #000000;
+}
+
+div.innerborder{
+	width: 99%;
+	border-style: solid;
+	border-color: #ffffff;
+	border-width: 2px;
+	margin: auto;
+	padding: 10px;
+}
+
+div.inthislesson h1 {
+	font-size: 1.4rem;
+	font-weight: bolder;
+	letter-spacing: 1.3rem;
+	font-variant-caps: all-small-caps;
+	color: #222222;
+}
 
