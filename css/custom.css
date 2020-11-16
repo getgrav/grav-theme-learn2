@@ -1,5 +1,4 @@
-/* Julie's CSS Test */
-
+/* general formatting */
 body {
 		font: 16px 'raleway', 'HelveticaNeue', 'Helvetica Neue', 'Helvetica-Neue', Helvetica, Arial, sans-serif;
 		color: #444;
@@ -31,6 +30,7 @@ hr.hrfade {
   border: 0;
 }
 
+/*Image Classes, except mobile screen shots*/
 .image45 {
 	width: 45%;
 	max-width: 600px;
@@ -73,10 +73,33 @@ hr.hrfade {
 	border-width: 2px;
 }
 
+.imageex {
+	width: 100%;
+	max-width: 600px;
+	max-height: 600px;
+	height: auto;
+	border-style: outset;
+	border-color: #222222;
+	border-width: 2px;
+}
+
+/*description section for images*/
 div.desc {
   	padding: 15px;
   	text-align: center;
+  	margin: -3.3rem auto auto auto;
 } 
+
+/*to align the link back to the top of the page*/
+p.top {
+	text-align: right;
+}
+
+/*for image caption to be close enough to image*/
+p.caption {
+	margin: 0;
+}
+
 
 /*to allow images to display next to each other*/
 div.compare {
@@ -113,7 +136,7 @@ div.mobile{
 	padding: 10px;
 }
 
- /*for image at head of each mobile callout section
+/*for image at head of each mobile callout section
  add div around image with this class*/
 div.mobilecalloutimg {
 	float: left;
@@ -126,14 +149,17 @@ div.mobilecalloutimg {
 /*to center video sections and iframes*/
 div.video {
 	text-align: center;
-	margin: auto;
+	background: #cc5d31;
+	padding: 10px;
 }
 
+/*create box to describe lesson at top of each lesson page*/
 div.inthislesson {
 	background-color: #8a8a8a;
 	color: #ffffff;
-	margin: 1rem;
+	margin: auto;
 	padding: .5rem;
+	font-size: 1.2rem;
 }
 
 div.inthislesson a {
@@ -153,10 +179,86 @@ div.innerborder{
 }
 
 div.inthislesson h1 {
-	font-size: 1.4rem;
+	font-size: 1.8rem;
 	font-weight: bolder;
-	letter-spacing: 1.3rem;
+	letter-spacing: 1.2rem;
 	font-variant-caps: all-small-caps;
 	color: #222222;
 }
+
+/* Create responsive display for sets of descriptions and examples */
+* {box-sizing: border-box;}
+
+h2.th {
+	margin-bottom: 0px;
+}
+
+div.descriptionarea {
+    display: table;
+    border-top: 2px solid #cc5d31;
+	border-left: 1px solid #f4f4f4;
+ 	border-right: 1px solid #f4f4f4;  
+	padding-right: 20px;
+	width: 100%;
+}
+
+.col-2 {
+	width: 40%;
+	float: left;
+}
+
+.col-1 {
+	width: 60%;
+	float: left;
+    padding: 20px;
+}
+
+.[descriptionarea]::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+  [class*="imageex"]{
+  	width: 70%;
+  }
+  [class*="tablehead"]{
+  	display: none;
+  }
+}
+
+/* Include header for description/example displays */
+.tablehead {
+	display: grid;
+    grid-template-columns: 3fr 2fr;
+	grid-template-areas: "thl thr";
+}
+
+.tablehead {
+	border-top: 2px solid #cc5d31;
+	border-left: 1px solid #f4f4f4;
+ 	border-right: 1px solid #f4f4f4;
+ 	background-color: #f2f2f2; 
+	width: 100%;
+	text-transform: capitalize;
+	font-weight: bold;
+}
+.tablehead p {
+	margin: 0;
+}
+.tablehead .thl {
+	grid-area: thl;
+	padding: 10px;
+}
+.tablehead .thr {
+	grid-area: thr;
+	background-color: #f2f2f2;
+	padding: 10px;
+}
+
 
