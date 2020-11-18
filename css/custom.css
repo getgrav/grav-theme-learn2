@@ -88,6 +88,16 @@ hr.hrfade {
 	border-width: 2px;
 }
 
+.imageexsmall {
+	width: 100%;
+	max-width: 300px;
+	max-height: 300px;
+	height: auto;
+	border-style: outset;
+	border-color: #222222;
+	border-width: 2px;
+}
+
 /*description section for images*/
 div.desc {
   	padding: 15px;
@@ -122,6 +132,13 @@ div.compareimage {
 	max-width: 500px;
 	margin-right: 15px;
 	margin-left: 15px;
+}
+
+div.compareimage3 {
+	width: 32%;
+	max-width: 300px;
+	min-width: 150px;
+	margin: auto;
 }
 
 /*class for all screen shots from mobile phones (not tablets)*/
