@@ -33,8 +33,7 @@ hr.hrfade {
 /*Image Classes, except mobile screen shots*/
 .image45 {
 	width: 45%;
-	max-width: 600px;
-	max-height: 600px;
+	max-width: 450px;	
 	height: auto;
 	border-style: outset;
 	border-color: #222222;
@@ -44,9 +43,17 @@ hr.hrfade {
 
 .image70 {
 	width: 70%;
-	max-width: 1200px;
-	max-height: 1200px;
+	max-width: 600px;
 	height: auto;
+	border-style: outset;
+	border-color: #222222;
+	border-width: 2px;
+	margin: -15px 0;
+}
+
+.image70v {
+	width: 70% auto;
+	max-height: 700px;
 	border-style: outset;
 	border-color: #222222;
 	border-width: 2px;
@@ -55,8 +62,7 @@ hr.hrfade {
 
 .image90 {
 	width: 90%;
-	max-width: 1600px;
-	max-height: 1600px;
+	max-width: 900px;
 	height: auto;
 	border-style: outset;
 	border-color: #222222;
@@ -65,8 +71,7 @@ hr.hrfade {
 
 .image100 {
 	width: 100%;
-	max-width: 1800px;
-	max-height: 1800px;
+	max-width: 1000px;
 	height: auto;
 	border-style: outset;
 	border-color: #222222;
@@ -88,6 +93,7 @@ div.desc {
   	padding: 15px;
   	text-align: center;
   	margin: -3.3rem auto auto auto;
+  	max-width: 800px;
 } 
 
 /*to align the link back to the top of the page*/
@@ -105,14 +111,15 @@ p.caption {
 div.compare {
 	display: flex;
 	flex-wrap: wrap;
-	flex-basis: row;
 	align-items: center;
 	justify-content: space-around;
+
 }
 
 /*for each image when you want just two images side by side*/
 div.compareimage {
 	width: 45%;
+	max-width: 500px;
 	margin-right: 15px;
 	margin-left: 15px;
 }
@@ -134,23 +141,63 @@ div.mobile{
 	margin-right: 10px;
 	margin-left: 10px;
 	padding: 10px;
+	min-height: 253px;
+	border-top: 2px solid #444;
+}
+
+div.mobile a {
+	color: #6fc4b0;
+}
+div.mobile a:hover {
+	color: #000000;
+}
+div.mobile div.desc {
+  	padding: 15px;
+  	text-align: center;
+  	margin: -3.3rem auto auto auto;
+  	max-width: 310px;
 }
 
 /*for image at head of each mobile callout section
  add div around image with this class*/
 div.mobilecalloutimg {
 	float: left;
-	margin-left: -15px;
-	margin-top: -63px;
+	margin-top: -58px;
+	margin-bottom: -38px;
+	margin-left: -11px;
 	padding-right: 20px;
 	width: 100px;
+	border-collapse: collapse;
 }
 
 /*to center video sections and iframes*/
 div.video {
 	text-align: center;
-	background: #cc5d31;
+	background-image: linear-gradient(rgba(204, 93, 49,1), rgba(204, 93, 49, .4));
 	padding: 10px;
+	color: #ffffff;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 1.7rem;
+}
+div.iframe {
+	position: relative;
+	width: 90%;
+  	overflow: hidden;
+  	padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  	margin: auto;
+}
+
+iframe.iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
 }
 
 /*create box to describe lesson at top of each lesson page*/
@@ -185,6 +232,7 @@ div.inthislesson h1 {
 	font-variant-caps: all-small-caps;
 	color: #222222;
 }
+/*end describe lesson area*/
 
 /* Create responsive display for sets of descriptions and examples */
 * {box-sizing: border-box;}
@@ -262,3 +310,12 @@ div.descriptionarea {
 }
 
 
+/*other items*/
+
+.clear {
+	clear: left;
+}
+
+.pcollapse {
+	margin-bottom: -1.2rem;
+}
