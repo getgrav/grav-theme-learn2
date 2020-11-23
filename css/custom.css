@@ -121,15 +121,13 @@ p.caption {
 div.compare {
 	display: flex;
 	flex-wrap: wrap;
-	align-items: center;
 	justify-content: space-around;
-
 }
 
 /*for each image when you want just two images side by side*/
 div.compareimage {
 	width: 45%;
-	max-width: 500px;
+	max-width: 400px;
 	margin-right: 15px;
 	margin-left: 15px;
 }
@@ -138,7 +136,6 @@ div.compareimage3 {
 	width: 32%;
 	max-width: 300px;
 	min-width: 150px;
-	margin: auto;
 }
 
 /*class for all screen shots from mobile phones (not tablets)*/
@@ -224,6 +221,7 @@ div.inthislesson {
 	margin: auto;
 	padding: .5rem;
 	font-size: 1.2rem;
+	margin-bottom: 3.0rem;
 }
 
 div.inthislesson a {
@@ -265,6 +263,7 @@ div.descriptionarea {
  	border-right: 1px solid #f4f4f4;  
 	padding-right: 20px;
 	width: 100%;
+	margin-bottom: -1.7rem;
 }
 
 .col-2 {
@@ -312,6 +311,7 @@ div.descriptionarea {
 	width: 100%;
 	text-transform: capitalize;
 	font-weight: bold;
+	margin-bottom: -1.7rem;
 }
 .tablehead p {
 	margin: 0;
@@ -335,4 +335,40 @@ div.descriptionarea {
 
 .pcollapse {
 	margin-bottom: -1.2rem;
+}
+
+/*another table with 3 columns, no borders*/
+div.table2 {
+    display: table;
+	padding-right: 10px;
+	width: 100%;
+	margin-bottom: -1.7rem;
+}
+
+.table2 p {
+	margin: 0px;
+}
+.col-t1 {
+	width: 33%;
+	min-width: 150px;
+	float: left;
+	padding: 10px;
+}
+.col-t2 {
+	width: 33%;
+	min-width: 150px;
+	padding: 10px;
+	float: left;
+}
+.col-t3 {
+	width: 33%;
+	min-width: 150px;
+	padding: 10px;
+	float: left;
+}
+
+.[table2]::after {
+  content: "";
+  clear: both;
+  display: table;
 }

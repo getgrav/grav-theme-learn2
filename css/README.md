@@ -81,6 +81,9 @@ To line images up horizontally, ie display in columns if there is enough display
 			<div class="compareimage">
 				<a rel="lightbox" href="file reference">
 					<img src="same file reference" alt="" class="compareimage,image100"> (or mobile instead of image100)
+					<div class="desc">
+						<p class="caption">Caption Text here.</p>
+					</div>
 				</a>
 			</div>
 				Can also add desc class to each image.
@@ -90,6 +93,8 @@ To line images up horizontally, ie display in columns if there is enough display
 
 
 <!-- Full example of a compare image section using mobile images. This will allow images to display next to each other if there is enough space, they will all open in lightbox, and they have captions. This would go inside of a  mobile callout section-->
+<p class="pcollase">
+	<!-- if you have a paragraph right above the images, add the pcollapse class to the paragraph to reduce the space below it.  -->
 <div class="compare">
       <div class="compareimage">
         <a rel="lightbox" href="/user/pages/all_users/04. objects/01. markers/objects_markers_mobile_01.png">
@@ -126,17 +131,16 @@ To line images up horizontally, ie display in columns if there is enough display
 	To style the mobile section, build it as such:
 	<div class="mobile">
 		<div class="mobilecalloutimg">
-        	<img src="/user/pages/all_users/MOBILE_header.png"> 
-        	<!-- (make sure image is in the file - actually i should move this to a better location) -->
+        	<img src="/user/pages/all_users/MOBILE_header.png">
 		</div>
 		<h3>Section Title Here</h3>
 		<p> add content in p tags</p>
 		<p>can have multiple paragraphs</p>
 	<!-- if you have screen shots to add use this (example is for 3 images) --> 
 		<div class="compare">
-	      <div><img src="relative link" alt="" class="mobile,lightbox"></div>
-	      <div><img src="next relative link" alt="" class="mobile,lightbox"></div>
-	      <div><img src=" nextrelative link" alt="" class="mobile,lightbox"></div>
+	      <div><img src="relative link" alt="" class="mobile"></div>
+	      <div><img src="next relative link" alt="" class="mobile"></div>
+	      <div><img src=" nextrelative link" alt="" class="mobile"></div>
 	<!-- end of image section -->
 		</div> 
 		<p>another paragraph if you want it</p>  
