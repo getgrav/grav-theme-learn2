@@ -13,6 +13,7 @@ body h1 {
 
 body h2 {
 	font-size: 2rem;
+	font-weight: bold;
 }
 
 body h3 {font-size: 1.5rem;}
@@ -96,6 +97,21 @@ hr.hrfade {
 	border-style: outset;
 	border-color: #222222;
 	border-width: 2px;
+}
+
+.floatright {
+	float: right;
+	padding-left: 20px;
+	width: 33%;
+	border-collapse: collapse;
+	margin-top: -3.0rem;
+}
+.floatleft {
+	float: left;
+	padding-right: 20px;
+	width: 33%;
+	border-collapse: collapse;
+	margin-top: -3.0rem;
 }
 
 /*description section for images*/
@@ -188,9 +204,10 @@ div.mobilecalloutimg {
 div.video {
 	text-align: center;
 	background-image: linear-gradient(rgba(204, 93, 49,1), rgba(204, 93, 49, .4));
-	padding: 10px;
+	padding-bottom: 20px;
+	padding-top: 10px;
 	color: #ffffff;
-	width: 90%;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 1.7rem;
@@ -200,7 +217,9 @@ div.iframe {
 	width: 90%;
   	overflow: hidden;
   	padding-top: 56.25%; /* 16:9 Aspect Ratio */
-  	margin: auto;
+  	margin-left: auto;
+  	margin-right: auto;
+  	margin-bottom: inherit;
 }
 
 iframe.iframe {
@@ -213,6 +232,12 @@ iframe.iframe {
 	height: 100%;
 	border: none;
 }
+
+div.video div.desc {
+ 	text-align: center;
+  	margin: -1.7rem auto auto auto;
+  	max-width: 800px;
+} 
 
 /*create box to describe lesson at top of each lesson page*/
 div.inthislesson {
