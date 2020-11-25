@@ -25,7 +25,7 @@
 		</div>
 	</div>
 
-!!! For every module page, begin with:
+!!! For every module/sction/chapter page, begin with:
 	<a name="top"></a>
 	<hr class="hrfade">
 	<div class="inthislesson">
@@ -48,8 +48,11 @@
 <!-- For the caption to work, you have to have the whole image inside a div. If you already have a div for another purpose (ie compareimage) then that will do fine. Free standing images just need a plain div with no class. -->
 <div>
 	<a rel="lightbox" href="">
-		<img src="" alt="" class="imageXX">
-		<div class="desc"><p class="caption">Add caption text here.</p></div>
+		<img src="" alt="" class="">
+		<div class="desc">
+			<p class="caption">
+			</p>
+		</div>
 	</a>
 </div>
 
@@ -96,24 +99,25 @@ To line images up horizontally, ie display in columns if there is enough display
 <p class="pcollase">
 	<!-- if you have a paragraph right above the images, add the pcollapse class to the paragraph to reduce the space below it.  -->
 <div class="compare">
-      <div class="compareimage">
-        <a rel="lightbox" href="/user/pages/all_users/04. objects/01. markers/objects_markers_mobile_01.png">
-          <img src="/user/pages/all_users/04. objects/01. markers/objects_markers_mobile_01.png" alt="markers menu" class="mobile">
-          <div class="desc"><p class="caption">Map Objects Menu in the Mobile App (from tapping the button at the top-center of the map viewer screen.</p></div>
-        </a>
-      </div>
-      <div class="compareimage">
-        <a rel="lightbox" href="/user/pages/all_users/04. objects/01. markers/objects_markers_mobile_02.png">
-          <img src="/user/pages/all_users/04. objects/01. markers/objects_markers_mobile_02.png" alt="markers add object menu"  class="mobile">
-          <div class="desc"><p class="caption">Menu after tapping the +Add Map Item button at the bottom of the previous screen.</p></div>
-        </a>
-      </div>
-      <div class="compareimage">
-        <a rel="lightbox" href="/user/pages/all_users/04. objects/01. markers/objects_markers_mobile_03.png">
-          <img src="/user/pages/all_users/04. objects/01. markers/objects_markers_mobile_03.png" alt="markers mobile 3"  class="mobile">
-          <div class="desc"><p class="caption">Alternatively, long-pressing on the map viewer at a point will produce a menu that will have an option to Add Marker.</p></div>
-        </a>
-      </div>
+  <div class="compareimage">
+    <a rel="lightbox" href="/user/pages/all_users/04. objects/01. markers/objects_markers_mobile_01.png">
+      <img src="/user/pages/all_users/04. objects/01. markers/objects_markers_mobile_01.png" alt="markers menu" class="mobile">
+      <div class="desc"><p class="caption">Map Objects Menu in the Mobile App (from tapping the button at the top-center of the map viewer screen.</p></div>
+    </a>
+  </div>
+  <div class="compareimage">
+    <a rel="lightbox" href="/user/pages/all_users/04. objects/01. markers/objects_markers_mobile_02.png">
+      <img src="/user/pages/all_users/04. objects/01. markers/objects_markers_mobile_02.png" alt="markers add object menu"  class="mobile">
+      <div class="desc"><p class="caption">Menu after tapping the +Add Map Item button at the bottom of the previous screen.</p></div>
+    </a>
+  </div>
+  <div class="compareimage">
+    <a rel="lightbox" href="/user/pages/all_users/04. objects/01. markers/objects_markers_mobile_03.png">
+      <img src="/user/pages/all_users/04. objects/01. markers/objects_markers_mobile_03.png" alt="markers mobile 3"  class="mobile">
+      <div class="desc"><p class="caption">Alternatively, long-pressing on the map viewer at a point will produce a menu that will have an option to Add Marker.</p></div>
+    </a>
+  </div>
+</div>
 <!-- end example -->
 
 !!! Videos
@@ -136,11 +140,11 @@ To line images up horizontally, ie display in columns if there is enough display
 		<h3>Section Title Here</h3>
 		<p> add content in p tags</p>
 		<p>can have multiple paragraphs</p>
-	<!-- if you have screen shots to add use this (example is for 3 images) --> 
+	<!-- if you have screen shots to add use this (example is for 3 images, thus uses class="compareimage3" instead of class="compareimage" as you would for 2 images) --> 
 		<div class="compare">
-	      <div><img src="relative link" alt="" class="mobile"></div>
-	      <div><img src="next relative link" alt="" class="mobile"></div>
-	      <div><img src=" nextrelative link" alt="" class="mobile"></div>
+	      <div class="compareimage3"><a rel="lightbox" href=""><img src="relative link" alt="" class="mobile"><div class="desc"><p class="caption"></p></div></a></div>
+	      <div class="compareimage3"><a rel="lightbox" href=""><img src="next relative link" alt="" class="mobile"><div class="desc"><p class="caption"></p></div></a></div>
+	      <div class="compareimage3"><a rel="lightbox" href=""><img src=" nextrelative link" alt="" class="mobile"><div class="desc"><p class="caption"></p></div></a></div>
 	<!-- end of image section -->
 		</div> 
 		<p>another paragraph if you want it</p>  
