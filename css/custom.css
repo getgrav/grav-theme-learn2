@@ -173,6 +173,7 @@ div.mobile{
 	padding: 10px;
 	min-height: 253px;
 	border-top: 2px solid #444;
+	max-width: 1200px;
 }
 
 div.mobile a {
@@ -247,6 +248,7 @@ div.inthislesson {
 	padding: .5rem;
 	font-size: 1.2rem;
 	margin-bottom: 3.0rem;
+	max-width: 800px;
 }
 
 div.inthislesson a {
@@ -385,6 +387,8 @@ div.table2 {
 	padding: 10px;
 	float: left;
 }
+
+
 .col-t3 {
 	width: 33%;
 	min-width: 150px;
@@ -393,6 +397,36 @@ div.table2 {
 }
 
 .[table2]::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+div.table50 {
+	display: table;
+	padding-right: 10px;
+	width: 80%;
+	margin-left:auto;
+	margin-right: auto;
+}
+
+.col-t1-50 {
+	width: 50%;
+	min-width: 200px;
+	float: left;
+	padding: 10px;
+	margin-top: -1.7rem;
+}
+.col-t2-50 {
+	width: 50%;
+	min-width: 200px;
+	float: left;
+	padding: 10px;
+	margin-top: -3.0rem;
+}
+
+
+.[table50]::after {
   content: "";
   clear: both;
   display: table;
