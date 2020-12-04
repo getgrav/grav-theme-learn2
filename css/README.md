@@ -124,6 +124,7 @@ To line images up horizontally, ie display in columns if there is enough display
 	Wrap in div with class video
 	<!-- just add source link -->
 		<div class="video">
+			<h3>Title Here</h3>
 			<div class="iframe">
 				<iframe class="iframe" src="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 				</iframe>
