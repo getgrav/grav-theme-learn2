@@ -100,6 +100,16 @@ hr.hrfade {
 	border-width: 2px;
 }
 
+.icon{
+	width: 100%;
+	max-width: 100px;
+	max-height: 100px;
+	height: auto;
+	border-style: outset;
+	border-color: #222222;
+	border-width: 2px;
+}
+
 .floatright {
 	float: right;
 	padding-left: 20px;
@@ -306,6 +316,18 @@ div.descriptionarea {
 }
 
 .[descriptionarea]::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+div.descriptionareamobile {
+    display: table;  
+	padding-right: 20px;
+	width: 100%;
+	margin-bottom: -1.7rem;
+}
+.[descriptionareamobile]::after {
   content: "";
   clear: both;
   display: table;
