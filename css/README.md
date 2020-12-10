@@ -152,7 +152,7 @@ To line images up horizontally, ie display in columns if there is enough display
 	</div>
 <!-- end of mobile section -->
 
-!!! Table for Examples
+!!! Table for Examples- ie for descriptions of layers and overlays with images
 	To style a table-like structure that is adaptable for smaller devices:
 	Header Section:
 		<hr class="hrfade">
@@ -176,4 +176,17 @@ To line images up horizontally, ie display in columns if there is enough display
 		</div>
 	</div>
 
+
+
+!!! More Tables
+
+div.table2, col-t1 plus col-t4
+div.tablehead2
+These two make a simple, two column table, with a title on the left and description on the right. Split is 33/67. Tablehead2 lines the heading bar up better. Example in config lesson.
+
+div.table2, no tablehead
+makes a three column table with no header, but it has three columns. example is the intro section of the overlays or layers pages to list the links to all the individual descriptions. 
+
+
+table50 has two columns: col-t1-50 and col-t2-50 Example in Map Viewer Tour - similar to image comparison or to description area - but when you want the image to be more than 1/3 of the body
 

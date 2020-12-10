@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Raleway';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   src: url(https://fonts.gstatic.com/s/raleway/v18/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCIPrcVIT9d0c8.woff) format('woff');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
@@ -22,12 +22,14 @@ h1 {
 	font: 'raleway', 'HelveticaNeue', 'Helvetica Neue', 'Helvetica-Neue', Helvetica, Arial, sans-serif;
 	font-weight: bolder;
 	font-kerning: normal;
+	letter-spacing: 0.01rem;
 }
 h2 {
 	font-family: 'Raleway';
 	font: 'raleway', 'HelveticaNeue', 'Helvetica Neue', 'Helvetica-Neue', Helvetica, Arial, sans-serif;
 	font-size: 2rem;
 	font-weight: bold;
+	letter-spacing: 0.01rem;
 }
 
 h3 {
@@ -35,6 +37,7 @@ h3 {
 	font: 'raleway', 'HelveticaNeue', 'Helvetica Neue', 'Helvetica-Neue', Helvetica, Arial, sans-serif;
 	font-family: 'Raleway';
 	font-size: 1.5rem;
+	letter-spacing: 0.01rem;
 }
 
 body a {color: #269e80;}
@@ -161,6 +164,11 @@ p.caption {
 	margin: 0;
 }
 
+p.center {
+	text-align: center;
+	margin: auto;
+}
+
 
 /*to allow images to display next to each other*/
 div.compare {
@@ -173,8 +181,8 @@ div.compare {
 div.compareimage {
 	width: 45%;
 	max-width: 400px;
-	margin-right: 15px;
-	margin-left: 15px;
+/*	margin-right: 15px;
+	margin-left: 15px;*/
 }
 
 div.compareimage3 {
@@ -197,8 +205,8 @@ img.mobile {
 div.mobile{
 	background-color: #cc5d31;
 	color: #ffffff;
-	margin-right: 10px;
-	margin-left: 10px;
+/*	margin-right: 10px;
+	margin-left: 10px;*/
 	padding: 10px;
 	min-height: 253px;
 	border-top: 2px solid #444;
@@ -206,10 +214,11 @@ div.mobile{
 }
 
 div.mobile a {
-	color: #6fc4b0;
-}
+	color: #00389a;
+/*	font-weight: bold;
+*/}
 div.mobile a:hover {
-	color: #000000;
+	color: #0055e8;
 }
 div.mobile div.desc {
   	padding: 15px;
@@ -281,10 +290,10 @@ div.inthislesson {
 }
 
 div.inthislesson a {
-	color: #6fc4b0;
+	color: #00389a;
 }
 div.inthislesson a:hover {
-	color: #000000;
+	color: #0055e8;
 }
 
 div.innerborder{
@@ -384,17 +393,51 @@ div.descriptionareamobile {
 .tablehead p {
 	margin: 0;
 }
-.tablehead .thl {
+/*.tablehead */
+.thl {
 	grid-area: thl;
 	padding: 10px;
 }
-.tablehead .thr {
+/*.tablehead */
+.thr {
 	grid-area: thr;
 	background-color: #f2f2f2;
 	padding: 10px;
 }
 
+.tablehead50 {
+	display: grid;
+    grid-template-columns: 2fr 2fr;
+	grid-template-areas: "thl thr";
+}
 
+.tablehead2 {
+	display: grid;
+    grid-template-columns: 1fr 2fr;
+	grid-template-areas: "thl thr";
+}
+.tablehead2 {
+	border-top: 2px solid #cc5d31;
+	border-left: 1px solid #f4f4f4;
+ 	border-right: 1px solid #f4f4f4;
+ 	background-color: #f2f2f2; 
+	width: 100%;
+	text-transform: capitalize;
+	font-weight: bold;
+	margin-bottom: -1.7rem;
+}
+.tablehead2 p {
+	margin: 0;
+}
+/*.tablehead2 .thl {
+	grid-area: thl;
+	padding: 10px;
+}
+.tablehead2 .thr {
+	grid-area: thr;
+	background-color: #f2f2f2;
+	padding: 10px;
+}*/
 /*other items*/
 
 .clear {
@@ -429,12 +472,18 @@ div.table2 {
 	float: left;
 }
 
-
 .col-t3 {
 	width: 33%;
 	min-width: 150px;
 	padding: 10px;
 	float: left;
+}
+
+.col-t4 {
+	width: 67%;
+	min-width: 150px;
+	padding: 10px;
+	float: right;
 }
 
 .[table2]::after {
@@ -446,7 +495,7 @@ div.table2 {
 div.table50 {
 	display: table;
 	padding-right: 10px;
-	width: 80%;
+	width: 90%;
 	margin-left:auto;
 	margin-right: auto;
 }
