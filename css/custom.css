@@ -205,12 +205,10 @@ img.mobile {
 div.mobile{
 	background-color: #cc5d31;
 	color: #ffffff;
-/*	margin-right: 10px;
-	margin-left: 10px;*/
 	padding: 10px;
 	min-height: 253px;
 	border-top: 2px solid #444;
-	max-width: 1200px;
+	margin-top: 1.7rem;
 }
 
 div.mobile a {
@@ -272,10 +270,13 @@ iframe.iframe {
 	border: none;
 }
 
-div.video div.desc {
+div.video p {
  	text-align: center;
-  	margin: -1.7rem auto auto auto;
+  	margin: -.7rem auto auto auto;
   	max-width: 800px;
+  	padding-left: 15px;
+  	padding-right: 15px;
+  	color: #00389a;
 } 
 
 /*create box to describe lesson at top of each lesson page*/
