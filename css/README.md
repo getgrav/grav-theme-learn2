@@ -130,7 +130,7 @@ To line images up horizontally, ie display in columns if there is enough display
 				</iframe>
 			</div>
 		</div>
-
+Vimeo: replace iframe above with vimeo embed code. remove size, add class="iframe"
 
 !!! Mobile Section
 	To style the mobile section, build it as such:
