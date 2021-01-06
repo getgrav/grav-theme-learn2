@@ -25,6 +25,13 @@
 		</div>
 	</div>
 
+
+!!! Bottom of Every Page
+<p class="top"><a href="top">Back To Top</a></p>
+<hr class="hrfade" />
+<div class="navprev"><a href="/all_users/"> ⇽ Previous Lesson</a></div>
+<div class="navnext"><a href="/all_users/">Next Lesson ⇾ </a></div>	
+
 !!! For every module/sction/chapter page, begin with:
 	<a name="top"></a>
 	<hr class="hrfade">
