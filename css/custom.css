@@ -164,7 +164,7 @@ p.caption {
 	margin: 0;
 }
 
-p.center {
+.center {
 	text-align: center;
 	margin: auto;
 }
@@ -522,4 +522,13 @@ div.table50 {
   content: "";
   clear: both;
   display: table;
+}
+
+.navprev {
+	float: left;
+	vertical-align: center;
+}
+
+.navnext {
+	float: right;
 }
