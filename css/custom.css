@@ -524,9 +524,12 @@ div.table50 {
   display: table;
 }
 
+.navbottom {
+	width: 100%;
+}
+
 .navprev {
 	float: left;
-	vertical-align: center;
 }
 
 .navnext {
