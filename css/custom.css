@@ -431,16 +431,7 @@ div.descriptionareamobile {
 .tablehead2 p {
 	margin: 0;
 }
-/*.tablehead2 .thl {
-	grid-area: thl;
-	padding: 10px;
-}
-.tablehead2 .thr {
-	grid-area: thr;
-	background-color: #f2f2f2;
-	padding: 10px;
-}*/
-/*other items*/
+
 
 .clear {
 	clear: left;
@@ -494,7 +485,7 @@ div.table2 {
   display: table;
 }
 
-div.table50 {
+.table50 {
 	display: table;
 	padding-right: 10px;
 	width: 90%;
@@ -524,6 +515,22 @@ div.table50 {
   display: table;
 }
 
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="table50"] {
+    width: 100%;
+  }
+  [class*="col-"] {
+    width: 100%;
+  }  
+  [class*="col-t1-50"] {
+    margin-bottom: 15px;
+  }
+  [class*="col-t2-50"] {
+    margin-bottom: -10px;
+  }
+}
+
 .navbottom {
 	width: 100%;
 }
@@ -535,4 +542,24 @@ div.table50 {
 .navnext {
 	float: right;
 	text-align: right;
+}
+
+/*FAQ formatting*/
+
+.faq {
+	 background-color: #34495e40;
+	 padding: 2px 25px 2px 25px;
+	 margin: 1rem;
+}
+
+.faq h3 {
+	font-size: 1.4rem;
+	font-weight: bolder;
+	font-variant-caps: all-small-caps;
+	color: #222222;
+	margin-bottom: 0;
+}
+
+.faq p {
+	margin: 10px;
 }
