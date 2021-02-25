@@ -1,3 +1,9 @@
+# v1.8.2
+## 02/25/2021
+
+1. [](#bugfix)
+    * Fixed bad tab causing invalid blueprint [#91](https://github.com/getgrav/grav-theme-learn2/pull/91)
+
 # v1.8.1
 ## 01/15/2021
 
