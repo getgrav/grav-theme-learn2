@@ -316,6 +316,45 @@ div.inthislesson h1 {
 }
 /*end describe lesson area*/
 
+/*create box to describe lesson at top of each lesson page*/
+div.inthispage {
+	background-color: #eeeeee;
+	color: #222;
+	margin: auto auto 2rem;
+	padding: .5rem;
+/*	font-size: 1.2rem;*/
+/*	margin-bottom: 3.0rem;
+*/	max-width: 800px;
+}
+
+div.inthispage a {
+	color: #00389a;
+}
+div.inthispage a:hover {
+	color: #0055e8;
+}
+
+div.inthispage h1 {
+	font-size: 1.8rem;
+	font-weight: bolder;
+	letter-spacing: 0.8rem;
+	font-variant-caps: all-small-caps;
+}
+
+div.inthispage p {
+	margin: auto 1rem;
+}
+
+div.inthispage h3 {
+	font-weight: bolder;
+	color: rgb(204, 93, 49);
+	font-size: 1.1rem;
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+/*end describe lesson area*/
+
+
 /* Create responsive display for sets of descriptions and examples */
 * {box-sizing: border-box;}
 
