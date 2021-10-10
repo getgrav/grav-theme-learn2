@@ -224,15 +224,15 @@
         $alt-value: start;
     }
 
-    @elseif $value == "flex-end" {
+    @else if $value == "flex-end" {
         $alt-value: end;
     }
 
-    @elseif $value == "space-between" {
+    @else if $value == "space-between" {
         $alt-value: justify;
     }
 
-    @elseif $value == "space-around" {
+    @else if $value == "space-around" {
         $alt-value: center;
     }
 
@@ -257,7 +257,7 @@
         $alt-value: start;
     }    
 
-    @elseif $value == "flex-end" {
+    @else if $value == "flex-end" {
         $alt-value: end;
     }
 
@@ -280,7 +280,7 @@
         $value-2011: start;
     }    
 
-    @elseif $value == "flex-end" {
+    @else if $value == "flex-end" {
         $value-2011: end;
     }
 
@@ -300,15 +300,15 @@
         $value-2011: start;
     }    
 
-    @elseif $value == "flex-end" {
+    @else if $value == "flex-end" {
         $value-2011: end;
     }
 
-    @elseif $value == "space-between" {
+    @else if $value == "space-between" {
         $value-2011: justify;
     }
 
-    @elseif $value == "space-around" {
+    @else if $value == "space-around" {
         $value-2011: distribute;
     }
 
