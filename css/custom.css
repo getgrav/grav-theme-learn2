@@ -316,7 +316,7 @@ div.inthislesson h1 {
 }
 /*end describe lesson area*/
 
-/*create box to describe lesson at top of each lesson page*/
+/*create box to describe lesson at top of each lesson page:  first response section*/
 div.inthispage {
 	background-color: #eeeeee;
 	color: #222;
@@ -602,3 +602,30 @@ div.table2 {
 .faq p {
 	margin: 10px;
 }
+
+/*callout section for course exercises*/
+/*to create exercises callout section*/
+div.exam{
+	background-color: #cc5d31;
+	color: #ffffff;
+	padding: 0px 20 px 10px 20px;
+	min-height: 253px;
+	border-top: 2px solid #444;
+	margin-top: 1.7rem;
+}
+
+div.exam a {
+	color: #00389a;
+/*	font-weight: bold;
+*/}
+div.exam a:hover {
+	color: #0055e8;
+}
+
+div.exam div.desc {
+  	padding: 15px;
+  	text-align: center;
+  	margin: -3.3rem auto auto auto;
+  	max-width: 310px;
+}
+
