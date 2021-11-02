@@ -46,3 +46,9 @@ ru:
     THEME_LEARN2_CLEAR_HISTORY: Очистить историю
     THEME_LEARN2_BUILT_WITH_GRAV: Сделано на <a href="http://getgrav.org">Grav</a> — современной файловой CMS
     THEME_LEARN2_SEARCH_DOCUMENTATION: Поиск по документации
+pl:
+    THEME_LEARN2_GITHUB_EDIT_THIS_PAGE: edytuj tę stronę
+    THEME_LEARN2_GITHUB_NOTE: Znalazłeś błędy? Myślisz, że możesz ulepszyć tę dokumentację?
+    THEME_LEARN2_CLEAR_HISTORY: Wyczyść historię
+    THEME_LEARN2_BUILT_WITH_GRAV: Zbudowany za pomocą <a href="http://getgrav.org">Grav</a> — Nowoczesny menedżer treści wykorzystujący zwykłe pliki tekstowe
+    THEME_LEARN2_SEARCH_DOCUMENTATION: Przeszukaj dokumentację 
