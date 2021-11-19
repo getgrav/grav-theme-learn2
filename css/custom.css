@@ -341,9 +341,9 @@ div.inthispage h1 {
 	font-variant-caps: all-small-caps;
 }
 
-div.inthispage p {
+/* div.inthispage p {
 	margin: auto 1rem;
-}
+} */
 
 div.inthispage h3 {
 	font-weight: bolder;
