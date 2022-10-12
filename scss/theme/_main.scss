@@ -42,6 +42,11 @@
         }
     }
 
+   .fixed-size-content {
+        max-width: 900px;
+        margin: auto;
+    }
+
     h1 + hr {
         margin-top: -1.7rem;
         margin-bottom: 3rem;
