@@ -1,17 +1,21 @@
 <link rel="stylesheet" href="https://caltopo.com/static/css/cookie-controls-1.css" type="text/css" media="all">
 <script src="https://caltopo.com/static/js/cookie-controls-1.js"></script>
-<script type="text/javascript">
-    var cookies = new org.sarsoft.Cookies(null, true);
-    cookies.initializeControls('{{ theme_config.google_analytics_code }}', function(gaID) {
-        ga('send', 'pageview');
-    }, function(gaID) {
-        window.setTimeout(function() {
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-          ga('create', gaID, 'auto');
-          ga('send', 'pageview');
-        }, 1000);
-    });
+<script>
+  var _paq = window._paq = window._paq || [];
+  _paq.push(['requireCookieConsent']);
+  _paq.push(['trackPageView']);
+  (function() {
+    var u="https://{{ theme_config.matomo_domain }}/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '{{ theme_config.matomo_site_id }}']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src='//cdn.matomo.cloud/caltopo.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+  var cookies = new org.sarsoft.Cookies(sarsoft.settings);
+  cookies.initializeControls(function(cookiesAllowed) {
+    _paq = window._paq;
+    if(_paq && cookiesAllowed) {
+      _paq.push(['setCookieConsentGiven']);
+    }
+  });
 </script>

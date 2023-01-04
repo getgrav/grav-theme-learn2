@@ -2,7 +2,8 @@ enabled: true
 root_page:                                          # optional: set root page of documentation
 top_level_version: false                            # Use versions for top level navigation
 show_all_pages: false                               # Show all pages without having to 'open' them
-google_analytics_code: UA-65885262-1                # Enter your `UA-XXXXXXXX-X` code here
+matomo_site_id: 5                                   # Enter your Matomo site identifier
+matomo_domain:  caltopo.matomo.cloud                # Enter your Matomo cloud domain
 home_url:                                           # http://getgrav.org
 github:
     position: off                                   # top | bottom | off

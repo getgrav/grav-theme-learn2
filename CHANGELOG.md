@@ -1,3 +1,9 @@
+# v1.8.3
+## 11/08/2022
+
+1. [](#new)
+    * Replace Google Analytics with [Matomo](https://matomo.org/)
+
 # v1.8.2
 ## 02/25/2021
 

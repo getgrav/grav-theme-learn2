@@ -1,7 +1,7 @@
 name: Learn2
 slug: learn2
 type: theme
-version: 1.8.2
+version: 1.8.3
 description: "Learn2 is a new modern documentation theme for Grav"
 icon: book
 author:
@@ -38,12 +38,17 @@ form:
         validate:
           type: text
 
-    google_analytics_code:
+    matomo_domain:
         type: text
-        label: Google Analytics Code
-        placeholder: UA-XXXXXXXX-X
+        label: Matomo Cloud domain
+        placeholder: xxx.matomo.cloud
         validate:
           type: text
+
+    matomo_site_id:
+        type: number
+        label: Matomo site id
+        placeholder: 1
 
     github.position:
         type: select

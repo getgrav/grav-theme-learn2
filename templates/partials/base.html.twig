@@ -90,7 +90,7 @@
     {% endblock %}
 
     {% block analytics %}
-        {% if theme_config.google_analytics_code %}
+        {% if theme_config.matomo_domain %}
         {% include 'partials/analytics.html.twig' %}
         {% endif %}
     {% endblock %}
