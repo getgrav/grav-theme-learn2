@@ -11,7 +11,7 @@
     var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
     g.async=true; g.src='//cdn.matomo.cloud/caltopo.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
   })();
-  var cookies = new org.sarsoft.Cookies(sarsoft.settings);
+  var cookies = new org.sarsoft.Cookies(null, true);
   cookies.initializeControls(function(cookiesAllowed) {
     _paq = window._paq;
     if(_paq && cookiesAllowed) {
