@@ -34,8 +34,14 @@ h3 {
 	font-family: 'Raleway';
 	font: 'raleway', 'HelveticaNeue', 'Helvetica Neue', 'Helvetica-Neue', Helvetica, Arial, sans-serif;
 	font-family: 'Raleway';
-	font-size: 1.5rem;
+	font-size: 1.4rem;
 	letter-spacing: 0.01rem;
+	font-weight: 600;
+}
+
+h4 {
+	font-size: 1.2rem;
+
 }
 
 body a {color: #269e80;}
@@ -320,9 +326,9 @@ div.inthispage {
 	color: #222;
 	margin: auto auto 2rem;
 	padding: .5rem;
-/*	font-size: 1.2rem;*/
-/*	margin-bottom: 3.0rem;
-*/	max-width: 800px;
+	font-size: 1.2rem;
+	margin-bottom: 3.0rem;
+	max-width: 800px;
 }
 
 div.inthispage a {
