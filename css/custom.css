@@ -1,348 +1,381 @@
 @font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 500;
-  src: url(https://fonts.gstatic.com/s/raleway/v18/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCIPrcVIT9d0c8.woff) format('woff');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 500;
+    src: url(https://fonts.gstatic.com/s/raleway/v18/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCIPrcVIT9d0c8.woff)
+        format("woff");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
+        U+2215, U+FEFF, U+FFFD;
 }
 
 /* general formatting */
 body {
-		font-family: 'Raleway';
-		font: 16px 'raleway', 'HelveticaNeue', 'Helvetica Neue', 'Helvetica-Neue', Helvetica, Arial, sans-serif;
-		color: #444;
-		letter-spacing: 0.01rem;
-		-webkit-text-size-adjust: 100%;
+    font-family: "Raleway";
+    font: 16px "raleway", "HelveticaNeue", "Helvetica Neue", "Helvetica-Neue",
+        Helvetica, Arial, sans-serif;
+    color: #444;
+    letter-spacing: 0.01rem;
+    -webkit-text-size-adjust: 100%;
 }
 
 h1 {
-	font-family: 'Raleway';
-	font: 'raleway', 'HelveticaNeue', 'Helvetica Neue', 'Helvetica-Neue', Helvetica, Arial, sans-serif;
-	font-weight: bolder;
-	font-kerning: normal;
-	letter-spacing: 0.01rem;
+    font-family: "Raleway";
+    font: "raleway", "HelveticaNeue", "Helvetica Neue", "Helvetica-Neue",
+        Helvetica, Arial, sans-serif;
+    font-weight: bolder;
+    font-kerning: normal;
+    letter-spacing: 0.01rem;
 }
 h2 {
-	font-family: 'Raleway';
-	font: 'raleway', 'HelveticaNeue', 'Helvetica Neue', 'Helvetica-Neue', Helvetica, Arial, sans-serif;
-	font-size: 2rem;
-	font-weight: bold;
-	letter-spacing: 0.01rem;
+    font-family: "Raleway";
+    font: "raleway", "HelveticaNeue", "Helvetica Neue", "Helvetica-Neue",
+        Helvetica, Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 0.01rem;
 }
 
 h3 {
-	font-family: 'Raleway';
-	font: 'raleway', 'HelveticaNeue', 'Helvetica Neue', 'Helvetica-Neue', Helvetica, Arial, sans-serif;
-	font-family: 'Raleway';
-	font-size: 1.4rem;
-	letter-spacing: 0.01rem;
-	font-weight: 600;
+    font-family: "Raleway";
+    font: "raleway", "HelveticaNeue", "Helvetica Neue", "Helvetica-Neue",
+        Helvetica, Arial, sans-serif;
+    font-family: "Raleway";
+    font-size: 1.4rem;
+    letter-spacing: 0.01rem;
+    font-weight: 600;
 }
 
 h4 {
-	font-size: 1.2rem;
-
+    font-size: 1.2rem;
 }
 
-body a {color: #269e80;}
+body a {
+    color: #00389a;
+}
 
-body a:hover {color:#6fc4b0;}
+body a:hover {
+    color: #cc5d31;
+}
 
 hr.hrfade {
-  height: 1px;
-  background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.8), rgba(0,0,0,0));
-  background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.8), rgba(0,0,0,0));
-  background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.8), rgba(0,0,0,0));
-  background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.8), rgba(0,0,0,0));
-  border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(
+        left,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0)
+    );
+    background-image: -moz-linear-gradient(
+        left,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0)
+    );
+    background-image: -ms-linear-gradient(
+        left,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0)
+    );
+    background-image: -o-linear-gradient(
+        left,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0)
+    );
+    border: 0;
 }
 
 /*Image Classes, except mobile screen shots*/
 .image45 {
-	width: 45%;
-	max-width: 450px;	
-	height: auto;
-	border-style: outset;
-	border-color: #222222;
-	border-width: 2px;
-	margin: -15px 0;
+    width: 45%;
+    max-width: 450px;
+    height: auto;
+    border-style: outset;
+    border-color: #222222;
+    border-width: 2px;
+    margin: -15px 0;
 }
 
 .image70 {
-	width: 70%;
-	max-width: 600px;
-	height: auto;
-	border-style: outset;
-	border-color: #222222;
-	border-width: 2px;
-	margin: -15px 0;
+    width: 70%;
+    max-width: 600px;
+    height: auto;
+    border-style: outset;
+    border-color: #222222;
+    border-width: 2px;
+    margin: -15px 0;
 }
 
 .image70v {
-	width: 70% auto;
-	max-height: 700px;
-	border-style: outset;
-	border-color: #222222;
-	border-width: 2px;
-	margin: -15px 0;
+    width: 70% auto;
+    max-height: 700px;
+    border-style: outset;
+    border-color: #222222;
+    border-width: 2px;
+    margin: -15px 0;
 }
 
 .image90 {
-	width: 90%;
-	max-width: 900px;
-	height: auto;
-	border-style: outset;
-	border-color: #222222;
-	border-width: 2px;
+    width: 90%;
+    max-width: 900px;
+    height: auto;
+    border-style: outset;
+    border-color: #222222;
+    border-width: 2px;
 }
 
 .image100 {
-	width: 100%;
-	max-width: 1000px;
-	height: auto;
-	border-style: outset;
-	border-color: #222222;
-	border-width: 2px;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    border-style: outset;
+    border-color: #222222;
+    border-width: 2px;
 }
 
 .imageex {
-	width: 100%;
-	max-width: 500px;
-	max-height: 500px;
-	height: auto;
-	border-style: outset;
-	border-color: #222222;
-	border-width: 2px;
+    width: 100%;
+    max-width: 500px;
+    max-height: 500px;
+    height: auto;
+    border-style: outset;
+    border-color: #222222;
+    border-width: 2px;
 }
 
 .imageexsmall {
-	width: 100%;
-	max-width: 300px;
-	max-height: 300px;
-	height: auto;
-	border-style: outset;
-	border-color: #222222;
-	border-width: 2px;
+    width: 100%;
+    max-width: 300px;
+    max-height: 300px;
+    height: auto;
+    border-style: outset;
+    border-color: #222222;
+    border-width: 2px;
 }
 
-.icon{
-	width: 100%;
-	max-width: 100px;
-	max-height: 100px;
-	height: auto;
-	border-style: outset;
-	border-color: #222222;
-	border-width: 2px;
+.icon {
+    width: 100%;
+    max-width: 100px;
+    max-height: 100px;
+    height: auto;
+    border-style: outset;
+    border-color: #222222;
+    border-width: 2px;
 }
 
 .floatright {
-	float: right;
-	padding-left: 20px;
-	width: 33%;
-	border-collapse: collapse;
-	margin-top: -3.0rem;
+    float: right;
+    padding-left: 20px;
+    width: 33%;
+    border-collapse: collapse;
+    margin-top: -3rem;
 }
 .floatleft {
-	float: left;
-	padding-right: 20px;
-	width: 33%;
-	border-collapse: collapse;
-	margin-top: -3.0rem;
+    float: left;
+    padding-right: 20px;
+    width: 33%;
+    border-collapse: collapse;
+    margin-top: -3rem;
 }
 
 /*description section for images*/
 div.desc {
-  	padding: 15px;
-  	text-align: center;
-  	margin: -3.3rem auto auto auto;
-  	max-width: 800px;
-} 
+    padding: 15px;
+    text-align: center;
+    margin: -3.3rem auto auto auto;
+    max-width: 800px;
+}
 
 /*to align the link back to the top of the page*/
 p.top {
-	text-align: right;
+    text-align: right;
 }
 
 /*for image caption to be close enough to image*/
 p.caption {
-	margin: 0;
+    margin: 0;
 }
 
 .center {
-	text-align: center;
-	margin: auto;
+    text-align: center;
+    margin: auto;
 }
-
 
 /*to allow images to display next to each other*/
 div.compare {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 /*for each image when you want just two images side by side*/
 div.compareimage {
-	width: 45%;
-	max-width: 400px;
-/*	margin-right: 15px;
+    width: 45%;
+    max-width: 400px;
+    /*	margin-right: 15px;
 	margin-left: 15px;*/
 }
 
 div.compareimage3 {
-	width: 32%;
-	max-width: 300px;
-	min-width: 150px;
+    width: 32%;
+    max-width: 300px;
+    min-width: 150px;
 }
 
 /*class for all screen shots from mobile phones (not tablets)*/
 img.mobile {
-	width: 290px;
-	margin: -15px 15px 0px 15px;
-	height: auto;
-	border-style: outset;
-	border-color: #222222;
-	border-width: 2px;
+    width: 290px;
+    margin: -15px 15px 0px 15px;
+    height: auto;
+    border-style: outset;
+    border-color: #222222;
+    border-width: 2px;
 }
 
 /*to create mobile callout section*/
-div.mobile{
-	background-color: #cc5d31;
-	color: #ffffff;
-	padding: 10px;
-	min-height: 253px;
-	border-top: 2px solid #444;
-	margin-top: 1.7rem;
+div.mobile {
+    background-color: #cc5d31;
+    color: #ffffff;
+    padding: 10px;
+    min-height: 253px;
+    border-top: 2px solid #444;
+    margin-top: 1.7rem;
 }
 
 div.mobile a {
-	color: #00389a;
-/*	font-weight: bold;
-*/}
+    color: #ffffff;
+    /*	font-weight: bold;
+*/
+}
 div.mobile a:hover {
-	color: #0055e8;
+    color: #000000;
 }
 div.mobile div.desc {
-  	padding: 15px;
-  	text-align: center;
-  	margin: -3.3rem auto auto auto;
-  	max-width: 310px;
+    padding: 15px;
+    text-align: center;
+    margin: -3.3rem auto auto auto;
+    max-width: 310px;
 }
 
 /*for image at head of each mobile callout section
  add div around image with this class*/
 div.mobilecalloutimg {
-	float: left;
-	margin-top: -58px;
-	margin-bottom: -38px;
-	margin-left: -11px;
-	margin-right: 10px;
-	padding-right: 20px;
-	width: 100px;
-	border-collapse: collapse;
+    float: left;
+    margin-top: -58px;
+    margin-bottom: -38px;
+    margin-left: -11px;
+    margin-right: 10px;
+    padding-right: 20px;
+    width: 100px;
+    border-collapse: collapse;
 }
 
 /*to center video sections and iframes*/
 div.video {
-	text-align: center;
-	background-image: linear-gradient(rgba(204, 93, 49,1), rgba(204, 93, 49, .4));
-	padding-bottom: 20px;
-	padding-top: 10px;
-	color: #ffffff;
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 1.7rem;
+    text-align: center;
+    background-image: linear-gradient(
+        rgba(204, 93, 49, 1),
+        rgba(204, 93, 49, 0.4)
+    );
+    padding-bottom: 20px;
+    padding-top: 10px;
+    color: #ffffff;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.7rem;
 }
 div.iframe {
-	position: relative;
-	width: 90%;
-  	overflow: hidden;
-  	padding-top: 56.25%; /* 16:9 Aspect Ratio */
-  	margin-left: auto;
-  	margin-right: auto;
-  	margin-bottom: inherit;
+    position: relative;
+    width: 90%;
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: inherit;
 }
 
 iframe.iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	width: 100%;
-	height: 100%;
-	border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
 }
 
 div.video p {
- 	text-align: center;
-  	margin: -.7rem auto auto auto;
-  	max-width: 800px;
-  	padding-left: 15px;
-  	padding-right: 15px;
-  	color: #00389a;
-} 
+    text-align: center;
+    margin: -0.7rem auto auto auto;
+    max-width: 800px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #00389a;
+}
 
 /*create box to describe lesson at top of each lesson page*/
 div.inthislesson {
-	background-color: #8a8a8a;
-	color: #ffffff;
-	margin: auto;
-	padding: .5rem;
-	font-size: 1.2rem;
-	margin-bottom: 3.0rem;
-	max-width: 800px;
+    background-color: #8a8a8a;
+    color: #ffffff;
+    margin: auto;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    max-width: 800px;
 }
 
 div.inthislesson a {
-	color: #00389a;
+    color: #00389a;
 }
 div.inthislesson a:hover {
-	color: #0055e8;
+    color: #0055e8;
 }
 
-div.innerborder{
-	width: 99%;
-	border-style: solid;
-	border-color: #ffffff;
-	border-width: 2px;
-	margin: auto;
-	padding: 10px;
+div.innerborder {
+    width: 99%;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 2px;
+    margin: auto;
+    padding: 10px;
 }
 
 div.inthislesson h1 {
-	font-size: 1.8rem;
-	font-weight: bolder;
-	letter-spacing: 1.2rem;
-	font-variant-caps: all-small-caps;
-	color: #222222;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    letter-spacing: 1.2rem;
+    font-variant-caps: all-small-caps;
+    color: #222222;
 }
 /*end describe lesson area*/
 
 /*create box to describe lesson at top of each lesson page:  first response section*/
 div.inthispage {
-	background-color: #eeeeee;
-	color: #222;
-	margin: auto auto 2rem;
-	padding: .5rem;
-	font-size: 1.2rem;
-	margin-bottom: 3.0rem;
-	max-width: 800px;
+    background-color: #eeeeee;
+    color: #222;
+    margin: auto auto 2rem;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    max-width: 800px;
 }
 
 div.inthispage a {
-	color: #00389a;
+    color: #00389a;
 }
 div.inthispage a:hover {
-	color: #0055e8;
+    color: #0055e8;
 }
 
 div.inthispage h1 {
-	font-size: 1.8rem;
-	font-weight: bolder;
-	letter-spacing: 0.8rem;
-	font-variant-caps: all-small-caps;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    letter-spacing: 0.8rem;
+    font-variant-caps: all-small-caps;
 }
 
 /* div.inthispage p {
@@ -350,280 +383,280 @@ div.inthispage h1 {
 } */
 
 div.inthispage h3 {
-	font-weight: bolder;
-	color: rgb(204, 93, 49);
-	font-size: 1.1rem;
-	margin-left: 1rem;
-	margin-right: 1rem;
+    font-weight: bolder;
+    color: rgb(204, 93, 49);
+    font-size: 1.1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 /*end describe lesson area*/
 
-
 /* Create responsive display for sets of descriptions and examples */
-* {box-sizing: border-box;}
+* {
+    box-sizing: border-box;
+}
 
 h2.th {
-	margin-bottom: 0px;
+    margin-bottom: 0px;
 }
 
 div.descriptionarea {
     display: table;
     border-top: 2px solid #cc5d31;
-	border-left: 1px solid #f4f4f4;
- 	border-right: 1px solid #f4f4f4;  
-	padding-right: 20px;
-	width: 100%;
-	margin-bottom: -1.7rem;
+    border-left: 1px solid #f4f4f4;
+    border-right: 1px solid #f4f4f4;
+    padding-right: 20px;
+    width: 100%;
+    margin-bottom: -1.7rem;
 }
 
 .col-2 {
-	width: 40%;
-	float: left;
+    width: 40%;
+    float: left;
 }
 
 .col-1 {
-	width: 60%;
-	float: left;
+    width: 60%;
+    float: left;
     padding: 20px;
 }
 
 .[descriptionarea]::after {
-  content: "";
-  clear: both;
-  display: table;
+    content: "";
+    clear: both;
+    display: table;
 }
 
 div.descriptionareamobile {
-    display: table;  
-	padding-right: 20px;
-	width: 100%;
-	margin-bottom: -1.7rem;
+    display: table;
+    padding-right: 20px;
+    width: 100%;
+    margin-bottom: -1.7rem;
 }
 .[descriptionareamobile]::after {
-  content: "";
-  clear: both;
-  display: table;
+    content: "";
+    clear: both;
+    display: table;
 }
 
 @media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  [class*="col-"] {
-    width: 100%;
-  }
-  [class*="imageex"]{
-  	width: 70%;
-  }
-  [class*="tablehead"]{
-  	display: none;
-  }
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+    [class*="imageex"] {
+        width: 70%;
+    }
+    [class*="tablehead"] {
+        display: none;
+    }
 }
 
 /* Include header for description/example displays */
 .tablehead {
-	display: grid;
+    display: grid;
     grid-template-columns: 3fr 2fr;
-	grid-template-areas: "thl thr";
+    grid-template-areas: "thl thr";
 }
 
 .tablehead {
-	border-top: 2px solid #cc5d31;
-	border-left: 1px solid #f4f4f4;
- 	border-right: 1px solid #f4f4f4;
- 	background-color: #f2f2f2; 
-	width: 100%;
-	text-transform: capitalize;
-	font-weight: bold;
-	margin-bottom: -1.7rem;
+    border-top: 2px solid #cc5d31;
+    border-left: 1px solid #f4f4f4;
+    border-right: 1px solid #f4f4f4;
+    background-color: #f2f2f2;
+    width: 100%;
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-bottom: -1.7rem;
 }
 .tablehead p {
-	margin: 0;
+    margin: 0;
 }
 /*.tablehead */
 .thl {
-	grid-area: thl;
-	padding: 10px;
+    grid-area: thl;
+    padding: 10px;
 }
 /*.tablehead */
 .thr {
-	grid-area: thr;
-	background-color: #f2f2f2;
-	padding: 10px;
+    grid-area: thr;
+    background-color: #f2f2f2;
+    padding: 10px;
 }
 
 .tablehead50 {
-	display: grid;
+    display: grid;
     grid-template-columns: 2fr 2fr;
-	grid-template-areas: "thl thr";
+    grid-template-areas: "thl thr";
 }
 
 .tablehead2 {
-	display: grid;
+    display: grid;
     grid-template-columns: 1fr 2fr;
-	grid-template-areas: "thl thr";
+    grid-template-areas: "thl thr";
 }
 .tablehead2 {
-	border-top: 2px solid #cc5d31;
-	border-left: 1px solid #f4f4f4;
- 	border-right: 1px solid #f4f4f4;
- 	background-color: #f2f2f2; 
-	width: 100%;
-	text-transform: capitalize;
-	font-weight: bold;
-	margin-bottom: -1.7rem;
+    border-top: 2px solid #cc5d31;
+    border-left: 1px solid #f4f4f4;
+    border-right: 1px solid #f4f4f4;
+    background-color: #f2f2f2;
+    width: 100%;
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-bottom: -1.7rem;
 }
 .tablehead2 p {
-	margin: 0;
+    margin: 0;
 }
 
-
 .clear {
-	clear: left;
+    clear: left;
 }
 
 .pcollapse {
-	margin-bottom: -1.2rem;
+    margin-bottom: -1.2rem;
 }
 
 /*another table with 3 columns, no borders*/
 div.table2 {
     display: table;
-	padding-right: 10px;
-	width: 100%;
-	margin-bottom: -1.7rem;
+    padding-right: 10px;
+    width: 100%;
+    margin-bottom: -1.7rem;
 }
 
 .table2 p {
-	margin: 0px;
+    margin: 0px;
 }
 .col-t1 {
-	width: 33%;
-	min-width: 150px;
-	float: left;
-	padding: 10px;
+    width: 33%;
+    min-width: 150px;
+    float: left;
+    padding: 10px;
 }
 .col-t2 {
-	width: 33%;
-	min-width: 150px;
-	padding: 10px;
-	float: left;
+    width: 33%;
+    min-width: 150px;
+    padding: 10px;
+    float: left;
 }
 
 .col-t3 {
-	width: 33%;
-	min-width: 150px;
-	padding: 10px;
-	float: left;
+    width: 33%;
+    min-width: 150px;
+    padding: 10px;
+    float: left;
 }
 
 .col-t4 {
-	width: 67%;
-	min-width: 150px;
-	padding: 10px;
-	float: right;
+    width: 67%;
+    min-width: 150px;
+    padding: 10px;
+    float: right;
 }
 
 .[table2]::after {
-  content: "";
-  clear: both;
-  display: table;
+    content: "";
+    clear: both;
+    display: table;
 }
 
 .table50 {
-	display: table;
-	padding-right: 10px;
-	width: 90%;
-	margin-left:auto;
-	margin-right: auto;
+    display: table;
+    padding-right: 10px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .col-t1-50 {
-	width: 50%;
-	min-width: 200px;
-	float: left;
-	padding: 10px;
-	margin-top: -1.7rem;
+    width: 50%;
+    min-width: 200px;
+    float: left;
+    padding: 10px;
+    margin-top: -1.7rem;
 }
 .col-t2-50 {
-	width: 50%;
-	min-width: 200px;
-	float: left;
-	padding: 10px;
-	margin-top: -3.0rem;
+    width: 50%;
+    min-width: 200px;
+    float: left;
+    padding: 10px;
+    margin-top: -3rem;
 }
 
-
 .[table50]::after {
-  content: "";
-  clear: both;
-  display: table;
+    content: "";
+    clear: both;
+    display: table;
 }
 
 @media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  [class*="table50"] {
-    width: 100%;
-  }
-  [class*="col-"] {
-    width: 100%;
-  }  
-  [class*="col-t1-50"] {
-    margin-bottom: 15px;
-  }
-  [class*="col-t2-50"] {
-    margin-bottom: -10px;
-  }
+    /* For mobile phones: */
+    [class*="table50"] {
+        width: 100%;
+    }
+    [class*="col-"] {
+        width: 100%;
+    }
+    [class*="col-t1-50"] {
+        margin-bottom: 15px;
+    }
+    [class*="col-t2-50"] {
+        margin-bottom: -10px;
+    }
 }
 
 .navbottom {
-	width: 100%;
+    width: 100%;
 }
 
 .navprev {
-	float: left;
+    float: left;
 }
 
 .navnext {
-	float: right;
-	text-align: right;
+    float: right;
+    text-align: right;
 }
 
 /*FAQ formatting*/
 
 .faq {
-	 background-color: #34495e40;
-	 padding: 2px 25px 2px 25px;
-	 margin: 1rem;
+    background-color: #34495e40;
+    padding: 2px 25px 2px 25px;
+    margin: 1rem;
 }
 
 .faq h3 {
-	font-size: 1.4rem;
-	font-weight: bolder;
-	font-variant-caps: all-small-caps;
-	color: #222222;
-	margin-bottom: 0;
+    font-size: 1.4rem;
+    font-weight: bolder;
+    font-variant-caps: all-small-caps;
+    color: #222222;
+    margin-bottom: 0;
 }
 
 .faq p {
-	margin: 10px;
+    margin: 10px;
 }
 
 /*to create exercises callout section*/
 div.exam {
-	background-color: #fd895c54;
-	color: #000;
-	padding: 10px 20px 10px 20px;
-	min-height: 150px;
-	border-top: 2px solid #444;
-	border-bottom: 2px solid #444;
-	margin-top: 1.7rem;
+    background-color: #fd895c54;
+    color: #000;
+    padding: 10px 20px 10px 20px;
+    min-height: 150px;
+    border-top: 2px solid #444;
+    border-bottom: 2px solid #444;
+    margin-top: 1.7rem;
 }
 
 div.exam a {
-	color: #00389a;
-/*	font-weight: bold;
-*/}
+    color: #00389a;
+    /*	font-weight: bold;
+*/
+}
 div.exam a:hover {
-	color: #0055e8;
+    color: #0055e8;
 }
 
 /*turn this on if you want to put an image inside an exercise
@@ -636,19 +669,20 @@ div.exam div.desc {
 
 /*to create exercise checkpoint sections*/
 div.checkpoint {
-	background-color: #31ccaa45;
-	color: #000;
-	padding: 10px 20px 10px 20px;
-	min-height: 100px;
-	border-top: 2px solid #444;
-	border-bottom: 2px solid #444;
-	margin-top: 1.7rem;
+    background-color: #31ccaa45;
+    color: #000;
+    padding: 10px 20px 10px 20px;
+    min-height: 100px;
+    border-top: 2px solid #444;
+    border-bottom: 2px solid #444;
+    margin-top: 1.7rem;
 }
 
 div.checkpoint a {
-	color: #00389a;
-/*	font-weight: bold;
-*/}
+    color: #00389a;
+    /*	font-weight: bold;
+*/
+}
 div.checkpoint a:hover {
-	color: #0055e8;
+    color: #0055e8;
 }
