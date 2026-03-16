@@ -41,7 +41,7 @@ form:
     google_analytics_code:
         type: text
         label: Google Analytics Code
-        placeholder: UA-XXXXXXXX-X
+        placeholder: G-XXXXXXXXXX
         validate:
           type: text
 
