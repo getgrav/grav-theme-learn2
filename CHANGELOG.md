@@ -1,3 +1,9 @@
+# v1.8.3
+## 09/09/2026
+
+1. [](#improved)
+    * Corrected the indentation of the deferred assets block in `partials/base.html.twig`
+
 # v1.8.2
 ## 02/25/2021
 
